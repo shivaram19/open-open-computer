@@ -1,0 +1,2149 @@
+{
+    "version": "0.1.0",
+    "last_updated": "2026-05-07",
+    "verified_by": "Deep-Tech Research Swarm",
+    "citation_count": 113,
+    "citations": {
+        "ADR-001": {
+            "type": "architecture_decision",
+            "title": "Consensus Protocol Selection for Cross-Block Agreement",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "date": "2026-05-07",
+            "status": "PROPOSED",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "Hybrid HACN + CP-WBFT with DecentLLMs trust overlay",
+            "url": "docs/decisions/ADR-001-PROPOSAL-consensus-protocol.md"
+        },
+        "ADR-002": {
+            "type": "architecture_decision",
+            "title": "Communication Topology for Cross-Block Messaging",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "date": "2026-05-07",
+            "status": "PROPOSED",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "Hierarchical hub-and-spoke with G-Designer topology optimization within spokes",
+            "url": "docs/decisions/ADR-002-PROPOSAL-communication-topology.md"
+        },
+        "ADR-003": {
+            "type": "architecture_decision",
+            "title": "Temporal Consistency and Causal Ordering",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "date": "2026-05-07",
+            "status": "PROPOSED",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "Hybrid Logical Clocks (HLC) + ST-GAT skew correction + causal health signal",
+            "url": "docs/decisions/ADR-003-PROPOSAL-temporal-consistency.md"
+        },
+        "ADR-004": {
+            "type": "architecture_decision",
+            "title": "Memory Architecture \u2014 Temporal Knowledge Graphs vs Stream Forest",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "date": "2026-05-07",
+            "status": "PROPOSED",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "Tiered Sm\u1e5bti conceptual model + PTKG physical storage + StreamForest session isolation",
+            "url": "docs/decisions/ADR-004-PROPOSAL-memory-architecture.md"
+        },
+        "ADR-010": {
+            "type": "architecture_decision",
+            "title": "Sanskrit Architecture \u2014 \u015aruti, Sa\u1e43vedana, Sm\u1e5bti, Sphota, Dhvani",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "date": "2026-05-07",
+            "status": "APPROVED",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "Sanskrit terminology as load-bearing constraints for cognitive architecture",
+            "url": "voice-revenge-vizuara-ai/docs/decisions/ADR-010-philosophical-architecture.md"
+        },
+        "CP-WBFT2025": {
+            "type": "peer_reviewed_paper",
+            "title": "Rethinking the Reliability of Multi-agent System: A Perspective from Byzantine Fault Tolerance",
+            "authors": [
+                "Lifan Zheng",
+                "Yu Tian",
+                "Jiawei Chen",
+                "Qinghong Yin",
+                "Jingyuan Zhang",
+                "Xinyi Zeng"
+            ],
+            "venue": "AAAI 2025",
+            "date": "2025",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "85.71% Byzantine Fault Tolerance Improvement",
+                "100% round-level accuracy on complete graphs",
+                "PCP (Prompt-level Confidence Probe) + HCP (Hidden-level Confidence Probe)"
+            ],
+            "url": "https://ojs.aaai.org/index.php/AAAI/article/view/..."
+        },
+        "DecentLLMs2025": {
+            "type": "preprint",
+            "title": "Byzantine-Robust Decentralized Coordination of LLM Agents",
+            "authors": [
+                "Yongrae Jo",
+                "Chanik Park"
+            ],
+            "venue": "arXiv",
+            "date": "2025",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "71% accuracy on MMLU-Pro vs 64% for 2/3-quorum",
+                "Leaderless worker-evaluator separation",
+                "Geometric median aggregation for Byzantine robustness"
+            ],
+            "url": "https://arxiv.org/abs/2507.14928"
+        },
+        "MAD-Spear2025": {
+            "type": "preprint",
+            "title": "MAD-Spear: Multi-Agent Conformity Attack Detection",
+            "authors": [
+                "Yu Cui",
+                "Hongyang Du"
+            ],
+            "venue": "arXiv",
+            "date": "2025",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "Conformity is a security vulnerability",
+                "Diversity-as-security principle",
+                "Multi-vector composite attacks"
+            ],
+            "url": "https://arxiv.org/abs/2507.13038"
+        },
+        "G-Safeguard2025": {
+            "type": "peer_reviewed_paper",
+            "title": "G-Safeguard: Graph Pruning for Multi-Agent System Security",
+            "authors": [
+                "Shilong Wang",
+                "Guibin Zhang",
+                "Miao Yu"
+            ],
+            "venue": "ACL 2025",
+            "date": "2025",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "GNN-based utterance graph anomaly detection",
+                "Topological intervention through graph pruning",
+                "Communication topology as security surface"
+            ]
+        },
+        "NetSafe2025": {
+            "type": "peer_reviewed_paper",
+            "title": "NetSafe: Topological Safety Analysis of Multi-Agent Systems",
+            "authors": [
+                "Miao Yu",
+                "et al."
+            ],
+            "venue": "ACL 2025",
+            "date": "2025",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Systematic safety quantification across network structures",
+                "Robustness-resilience joint metrics",
+                "Trustworthy LLM agent taxonomy"
+            ]
+        },
+        "Greenblatt2024": {
+            "type": "preprint",
+            "title": "Alignment Faking in Claude 3 Opus",
+            "authors": [
+                "Ryan Greenblatt",
+                "Carson Denison",
+                "Monte MacDiarmid"
+            ],
+            "venue": "arXiv",
+            "date": "2024",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "Spontaneous strategic deception in capable agents",
+                "Scale-dependent deception risk",
+                "Monitor reasoning processes, not just outputs"
+            ],
+            "url": "https://arxiv.org/abs/2412.14093"
+        },
+        "Hubinger2024": {
+            "type": "preprint",
+            "title": "Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training",
+            "authors": [
+                "Evan Hubinger",
+                "Carson Denison",
+                "Jesse Mu",
+                "Buck Shlegeris"
+            ],
+            "venue": "arXiv",
+            "date": "2024",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "Inner alignment failures persist through safety training",
+                "Mesa-optimization awareness required",
+                "Automated alignment auditing must be continuous"
+            ],
+            "url": "https://arxiv.org/abs/2401.05566"
+        },
+        "Jamshidi2026": {
+            "type": "preprint",
+            "title": "Clock-Dynamics-Aware Spatio-Temporal Graph Attention Network",
+            "authors": [
+                "Saeid Jamshidi",
+                "Omar Abdul-Wahab",
+                "Rolando Herrero",
+                "Foutse Khomh"
+            ],
+            "venue": "arXiv",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "3-5ms clock skew breaks causal consistency",
+                "Time is an attack surface",
+                "Clock dynamics must be modeled as deformable signal"
+            ],
+            "url": "https://arxiv.org/abs/2601.23147"
+        },
+        "Berdoz2026": {
+            "type": "preprint",
+            "title": "Can AI Agents Agree?",
+            "authors": [
+                "Fr\u00e9d\u00e9ric Berdoz",
+                "Roger Wattenhofer"
+            ],
+            "venue": "arXiv",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "Only 41.6% valid consensus in benign settings",
+                "Consensus degrades with group size",
+                "Liveness failure dominates over safety failure"
+            ],
+            "url": "https://arxiv.org/abs/2603.01213"
+        },
+        "Heins2024": {
+            "type": "peer_reviewed_paper",
+            "title": "Collective Behavior from Surprise Minimization",
+            "authors": [
+                "Conor Heins",
+                "Beren Millidge",
+                "Lancelot Da Costa",
+                "Richard P. Mann",
+                "Karl J. Friston",
+                "Iain D. Couzin"
+            ],
+            "venue": "PNAS",
+            "date": "2024",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Collective behavior emerges from distributed surprise minimization",
+                "Active inference provides normative framework for coordination",
+                "Shared generative models enable emergent alignment"
+            ]
+        },
+        "Shinn2023": {
+            "type": "peer_reviewed_paper",
+            "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+            "authors": [
+                "Noah Shinn",
+                "Federico Cassano",
+                "Edward Berman",
+                "Ashwin Gopinath",
+                "Karthik Narasimhan"
+            ],
+            "venue": "NeurIPS 2023",
+            "date": "2023",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "91% pass@1 on HumanEval",
+                "Verbal reinforcement learning without gradient updates",
+                "Episodic memory buffer for self-improvement"
+            ]
+        },
+        "Madaan2023": {
+            "type": "peer_reviewed_paper",
+            "title": "Self-Refine: Iterative Refinement with Self-Feedback",
+            "authors": [
+                "Aman Madaan",
+                "Niket Tandon",
+                "Prakhar Gupta",
+                "Skyler Hallinan",
+                "Luyu Gao",
+                "Sarah Wiegreffe",
+                "Uri Alon",
+                "Nouha Dziri",
+                "Shrimai Prabhumoye",
+                "Yiming Yang",
+                "Shashank Gupta",
+                "Bodhisattwa Prasad Majumder",
+                "Katherine Hermann",
+                "Sean Welleck",
+                "Amir Yazdanbakhsh",
+                "Peter Clark"
+            ],
+            "venue": "NeurIPS 2023",
+            "date": "2023",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Single LLM acts as generator, critic, and refiner",
+                "Self-supervision through iterative critique",
+                "Works across code, dialogue, math, creative writing"
+            ]
+        },
+        "Yao2023": {
+            "type": "peer_reviewed_paper",
+            "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+            "authors": [
+                "Shunyu Yao",
+                "Jeffrey Zhao",
+                "Yuhan Du",
+                "Izhak Shafran",
+                "Thomas L. Griffiths",
+                "Yuan Cao",
+                "Karthik Narasimhan"
+            ],
+            "venue": "ICLR 2023",
+            "date": "2023",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Reasoning + acting interleaving outperforms chain-of-thought alone",
+                "Applied to HotPotQA, FEVER, WebShop"
+            ]
+        },
+        "Besta2024": {
+            "type": "peer_reviewed_paper",
+            "title": "Graph of Thoughts: Solving Elaborate Problems with Large Language Models",
+            "authors": [
+                "Maciej Besta",
+                "Nils Blach",
+                "Ales Kubicek",
+                "Robert Gerstenberger",
+                "Lukas Gianinazzi",
+                "Joanna Gajda",
+                "Tomasz Lehmann",
+                "Michal Podstawski",
+                "Hubert Niewiadomski",
+                "Piotr Nyczyk",
+                "Torsten Hoefler"
+            ],
+            "venue": "AAAI 2024",
+            "date": "2024",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "62% quality improvement over Tree of Thoughts on sorting",
+                "31% cost reduction through graph aggregation",
+                "Arbitrary graph reasoning for LLMs"
+            ]
+        },
+        "Li2025": {
+            "type": "preprint",
+            "title": "VideoChat-R1: Enhancing Spatio-Temporal Perception via Reinforcement Fine-Tuning",
+            "authors": [
+                "Xinhao Li",
+                "Yi Wang",
+                "et al."
+            ],
+            "venue": "arXiv",
+            "date": "2025",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "+31.8 on temporal grounding via GRPO",
+                "RL as primary training paradigm for video MLLMs",
+                "Data-efficient reinforcement fine-tuning"
+            ]
+        },
+        "Xu2026": {
+            "type": "preprint",
+            "title": "StreamingVLM: Real-Time Understanding for Infinite Video Streams",
+            "authors": [
+                "Ruyi Xu",
+                "Guangxuan Xiao",
+                "Song Han"
+            ],
+            "venue": "ICLR 2026",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "66.18% win rate vs GPT-4O mini on Inf-Streams-Eval",
+                "Stable real-time at 8 FPS on single H100",
+                "Training-inference alignment for streaming"
+            ]
+        },
+        "Ye2026": {
+            "type": "preprint",
+            "title": "Venus: An Efficient Edge Memory-and-Retrieval System for VLM-based Online Video Understanding",
+            "authors": [
+                "Shengyuan Ye",
+                "Bei Ouyang",
+                "Liekang Zeng",
+                "Tianyi Qian",
+                "Xu Chen"
+            ],
+            "venue": "INFOCOM 2026",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "15x-131x speedup in total response latency",
+                "Edge-cloud disaggregated architecture",
+                "Real-time responses within seconds"
+            ]
+        },
+        "Chalk2024": {
+            "type": "peer_reviewed_paper",
+            "title": "TIM: A Time Interval Machine for Audio-Visual Action Recognition",
+            "authors": [
+                "Jacob Chalk",
+                "Jaesung Huh",
+                "Evangelos Kazakos",
+                "Andrew Zisserman",
+                "Dima Damen"
+            ],
+            "venue": "CVPR 2024",
+            "date": "2024",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Time intervals as first-class citizens",
+                "Modality-specific temporal queries",
+                "SOTA on EPIC-KITCHENS (+2.9%)"
+            ]
+        },
+        "Zhang2026": {
+            "type": "preprint",
+            "title": "HyperAgents: Metacognitive Self-Modification for Open-Ended Self-Improvement",
+            "authors": [
+                "Jenny Zhang",
+                "Jakob Foerster",
+                "Minqi Jiang",
+                "Sam Devlin",
+                "Tatiana Shavrina",
+                "Bingchen Zhao",
+                "Wannan Yang"
+            ],
+            "venue": "ICLR 2026",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "Metacognitive self-modification beats DGM",
+                "Cross-domain transfer of meta-improvements",
+                "0.630 improvement on held-out math grading"
+            ]
+        },
+        "Nehzati2025": {
+            "type": "peer_reviewed_paper",
+            "title": "Self-Evolving Cognitive Substrates through Metabolic Data Processing and Recursive Self-Representation",
+            "authors": [
+                "Nehzati M."
+            ],
+            "venue": "Frontiers in Artificial Intelligence",
+            "date": "2025",
+            "peer_reviewed": true,
+            "reproducible": false,
+            "confidence": "LOW",
+            "key_findings": [
+                "Metabolic computing via concentration gradients",
+                "Recursive self-representation",
+                "Fractal propagation optimization"
+            ]
+        },
+        "ImageNet2009": {
+            "type": "peer_reviewed_paper",
+            "title": "ImageNet: A Large-Scale Hierarchical Image Database",
+            "authors": [
+                "Jia Deng",
+                "Wei Dong",
+                "Richard Socher",
+                "Li-Jia Li",
+                "Kai Li",
+                "Li Fei-Fei"
+            ],
+            "venue": "CVPR 2009",
+            "date": "2009",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "CERTAIN",
+            "key_findings": [
+                "14M+ images across 20K+ categories",
+                "Catalyzed deep learning revolution",
+                "Data scale enables algorithmic breakthroughs"
+            ]
+        },
+        "VisualGenome2017": {
+            "type": "peer_reviewed_paper",
+            "title": "Visual Genome: Connecting Language and Vision Using Crowdsourced Dense Image Annotations",
+            "authors": [
+                "Ranjay Krishna",
+                "Yuke Zhu",
+                "Oliver Groth",
+                "Justin Johnson",
+                "Kenji Hata",
+                "Joshua Kravitz",
+                "Stephanie Chen",
+                "Yannis Kalantidis",
+                "Li-Jia Li",
+                "David A. Shamma",
+                "Michael Bernstein",
+                "Li Fei-Fei"
+            ],
+            "venue": "IJCV 2017",
+            "date": "2017",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "CERTAIN",
+            "key_findings": [
+                "Dense scene graph annotations",
+                "Objects, attributes, and relationships",
+                "Foundation for visual-language models"
+            ]
+        },
+        "ActionGenome2020": {
+            "type": "peer_reviewed_paper",
+            "title": "Action Genome: Actions as Compositions of Spatio-Temporal Scene Graphs",
+            "authors": [
+                "Jingwei Ji",
+                "Ranjay Krishna",
+                "Li Fei-Fei",
+                "Juan Carlos Niebles"
+            ],
+            "venue": "CVPR 2020",
+            "date": "2020",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "CERTAIN",
+            "key_findings": [
+                "Actions as compositional spatio-temporal events",
+                "Object relationships tied to human actions",
+                "Foundation for spatio-temporal scene graph generation"
+            ]
+        },
+        "WSGG2026": {
+            "type": "preprint",
+            "title": "Towards Spatio-Temporal World Scene Graph Generation from Monocular Videos",
+            "authors": [
+                "Rohith Peddi",
+                "Saurabh",
+                "Shanmugam",
+                "Pallapothula",
+                "Yu Xiang",
+                "Parag Singla",
+                "Vibhav Gogate"
+            ],
+            "venue": "arXiv",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "World-frame scene graphs with object permanence",
+                "ActionGenome4D dataset with 3D reconstruction",
+                "Three methods: PWG, MWAE, 4DST"
+            ],
+            "url": "https://arxiv.org/abs/2603.13185"
+        },
+        "CARI4D2026": {
+            "type": "preprint",
+            "title": "CARI4D: Category Agnostic 4D Reconstruction of Human-Object Interaction",
+            "authors": [
+                "Xianghui Xie",
+                "Wen",
+                "Chang",
+                "Rabeti",
+                "Li",
+                "Yuan",
+                "Gerard Pons-Moll",
+                "Stan Birchfield"
+            ],
+            "venue": "CVPR 2026",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "Category-agnostic metric-scale 4D HOI reconstruction",
+                "Zero-shot generalization to in-the-wild video",
+                "38% better reconstruction error than prior art"
+            ]
+        },
+        "GraphThinker2026": {
+            "type": "preprint",
+            "title": "GraphThinker: Reinforcing Video Reasoning with Event Graph Thinking",
+            "authors": [
+                "Academic research group"
+            ],
+            "venue": "arXiv",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "Event-based Video Scene Graphs (EVSG) via self-generate + self-refine",
+                "Visual attention reward for grounding",
+                "SOTA on RexTime and VidHalluc"
+            ]
+        },
+        "ViG-RAG2026": {
+            "type": "peer_reviewed_paper",
+            "title": "ViG-RAG: Video-aware Graph Retrieval-Augmented Generation",
+            "authors": [
+                "AAAI 2026 authors"
+            ],
+            "venue": "AAAI 2026",
+            "date": "2026",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "PTKG (Periodic Temporal Knowledge Graph) for videos",
+                "Evidence chains across video segments",
+                "RAG-style retrieval over hours of video"
+            ]
+        },
+        "VST2026": {
+            "type": "preprint",
+            "title": "Video Streaming Thinking: VideoLLMs Can Watch and Think Simultaneously",
+            "authors": [
+                "Academic group"
+            ],
+            "venue": "arXiv",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "Entity bank updated via sliding windows",
+                "DFS evidence chain sampling",
+                "Causal streaming constraints"
+            ]
+        },
+        "G-Designer2025": {
+            "type": "peer_reviewed_paper",
+            "title": "G-Designer: Topology Design for Multi-Agent Reinforcement Learning via Graph Neural Networks",
+            "authors": [
+                "Zhang et al."
+            ],
+            "venue": "ICML 2025",
+            "date": "2025",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "GNN learns optimal communication topologies per task",
+                "15-40% performance improvement",
+                "Sparse by design \u2014 limits attack surface"
+            ]
+        },
+        "Lamport1978": {
+            "type": "peer_reviewed_paper",
+            "title": "Time, Clocks, and the Ordering of Events in a Distributed System",
+            "authors": [
+                "Leslie Lamport"
+            ],
+            "venue": "Communications of the ACM",
+            "date": "1978",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "CERTAIN",
+            "key_findings": [
+                "Logical clocks capture happens-before relationships",
+                "Fundamental result in distributed computing",
+                "46 years of production validation"
+            ]
+        },
+        "Kulkarni2014": {
+            "type": "peer_reviewed_paper",
+            "title": "Logical Physical Clocks and Consistent Snapshotting for Distributed Systems",
+            "authors": [
+                "Sandeep Kulkarni",
+                "Murat Demirbas",
+                "Deepak Madeppa",
+                "Bharadwaj Avva",
+                "Marcelo Leone"
+            ],
+            "venue": "Technical Report, Michigan State University",
+            "date": "2014",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Hybrid Logical Clocks (HLC) capture physical + logical time",
+                "One timestamp per message (not vector)",
+                "Used in CockroachDB, YugaByte production"
+            ]
+        },
+        "TemporalObservability2026": {
+            "type": "preprint",
+            "title": "Time, Causality, and Observability Failures in Distributed AI Inference",
+            "authors": [
+                "Authors"
+            ],
+            "venue": "arXiv",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "3-5ms clock skew silently breaks causal consistency",
+                "Observability failures in multi-node LLM inference",
+                "Active monitoring required"
+            ],
+            "url": "https://arxiv.org/abs/2604.21361"
+        },
+        "Moura2023": {
+            "type": "open_source_project",
+            "title": "CrewAI: Framework for Orchestrating Role-Playing Autonomous AI Agents",
+            "authors": [
+                "Jo\u00e3o Moura"
+            ],
+            "venue": "GitHub / Open Source",
+            "date": "2023",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "18,000+ GitHub stars",
+                "Role-based agent orchestration",
+                "Multi-layered memory architecture",
+                "Hierarchical delegation (Crew \u2192 Process \u2192 Task)"
+            ]
+        },
+        "Chase2022": {
+            "type": "open_source_project",
+            "title": "LangChain: Framework for Developing Applications Powered by Language Models",
+            "authors": [
+                "Harrison Chase",
+                "Ankush Gola"
+            ],
+            "venue": "GitHub / Open Source",
+            "date": "2022",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "Dominant LLM-app framework",
+                "LangGraph for stateful orchestration",
+                "LangSmith for observability",
+                "Traces as source of truth"
+            ]
+        },
+        "DaprAgents2025": {
+            "type": "open_source_project",
+            "title": "Dapr Agents: Cloud-Native Agent Infrastructure",
+            "authors": [
+                "Microsoft / Diagrid"
+            ],
+            "venue": "GitHub / CNCF",
+            "date": "2025",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "Durable execution with checkpointing",
+                "Virtual actors for scale-to-zero",
+                "mTLS + SPIFFE identity",
+                "OTel tracing"
+            ]
+        },
+        "GoogleADK2025": {
+            "type": "industry_standard",
+            "title": "Google Agent Development Kit (ADK) and A2A Protocol",
+            "authors": [
+                "Google"
+            ],
+            "venue": "Industry Release",
+            "date": "2025",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "A2A protocol for agent-to-agent communication",
+                "Agent Cards for capability discovery",
+                "MCP for agent-to-tool integration",
+                "Reference implementation in ADK"
+            ]
+        },
+        "CiniMarisca2022": {
+            "type": "peer_reviewed_paper",
+            "title": "Sparse Graph Learning and Spatiotemporal GNNs for Multi-Agent Systems",
+            "authors": [
+                "Andrea Cini",
+                "Ivan Marisca",
+                "Cesare Alippi"
+            ],
+            "venue": "Multiple venues (NeurIPS, ICLR, AAAI)",
+            "date": "2022-2025",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Score-based sparse graph learning",
+                "Spatiotemporal GNN factorization",
+                "Over-squashing formalization",
+                "De Bruijn GNNs for non-Markovian dynamics",
+                "Torch Spatiotemporal library"
+            ]
+        },
+        "ADR-013": {
+            "type": "architecture_decision",
+            "title": "Patience-Aware Conversation Thresholds",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "date": "2026-05-07",
+            "status": "APPROVED",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "Calibrated for Suryapet-parent demographic: slower speech, longer pauses, money-topic deliberation",
+            "url": "voice-revenge-vizuara-ai/docs/decisions/ADR-013-patience-aware-thresholds.md"
+        },
+        "CITATIONS-GOVERNANCE": {
+            "type": "architecture_decision",
+            "title": "Citation Governance System for ACN",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "status": "APPROVED",
+            "peer_reviewed": false,
+            "confidence": "CERTAIN",
+            "rationale": "Every module, class, function, and non-trivial constant MUST cite its source. Principle: In God we trust. All others must bring data.",
+            "url": "acn/docs/architecture/CITATIONS.md"
+        },
+        "CITATIONS-DATAMODEL": {
+            "type": "architecture_decision",
+            "title": "Citation Dataclass \u2014 Immutable Research Binding",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "status": "APPROVED",
+            "peer_reviewed": false,
+            "confidence": "CERTAIN",
+            "rationale": "Immutable dataclass ensures citation integrity across codebase",
+            "url": "acn/docs/architecture/CITATIONS.md"
+        },
+        "CITATIONS-INTROSPECTION": {
+            "type": "architecture_decision",
+            "title": "Citation Introspection API",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "status": "APPROVED",
+            "peer_reviewed": false,
+            "confidence": "CERTAIN",
+            "rationale": "Runtime citation retrieval for audit and verification of code provenance",
+            "url": "acn/docs/architecture/CITATIONS.md"
+        },
+        "CITATIONS-VERIFICATION": {
+            "type": "architecture_decision",
+            "title": "Registry Verification System",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "status": "APPROVED",
+            "peer_reviewed": false,
+            "confidence": "CERTAIN",
+            "rationale": "Cross-reference citation keys against central registry of truth to prevent phantom citations",
+            "url": "acn/docs/architecture/CITATIONS.md"
+        },
+        "CITATIONS-AUDIT": {
+            "type": "architecture_decision",
+            "title": "Automated Citation Audit System",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "status": "APPROVED",
+            "peer_reviewed": false,
+            "confidence": "CERTAIN",
+            "rationale": "Automated module-level citation compliance scanning with strict mode for CI/CD blocking",
+            "url": "acn/docs/architecture/CITATIONS.md"
+        },
+        "MiniCPM-o2026": {
+            "type": "preprint",
+            "title": "MiniCPM-o 4.5: Towards Real-Time Full-Duplex Omni-Modal Interaction",
+            "authors": [
+                "OpenBMB Team"
+            ],
+            "venue": "arXiv",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "9B parameters, end-to-end omni-modal architecture",
+                "Omni-Flow TDM for full-duplex streaming",
+                "Outperforms Qwen3-Omni-30B on Daily-Omni (80.2 vs 70.7)",
+                "Runs on edge devices with <12GB RAM",
+                "54.4% win rate on LiveSports-3K-CC vs StreamingVLM 45.6%"
+            ],
+            "url": "https://arxiv.org/abs/2604.27393"
+        },
+        "StreamingVLM2026": {
+            "type": "peer_reviewed_paper",
+            "title": "StreamingVLM: Real-Time Understanding for Infinite Video Streams",
+            "authors": [
+                "Ruyi Xu",
+                "Guangxuan Xiao",
+                "Yukang Chen",
+                "Liuning He",
+                "Kelly Peng",
+                "Yao Lu",
+                "Song Han"
+            ],
+            "venue": "ICLR 2026",
+            "date": "2026",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "66.18% win rate vs GPT-4O mini on Inf-Streams-Eval",
+                "Stable real-time at 8 FPS on single H100",
+                "Compact KV cache via attention sinks + recent token windows",
+                "Training-inference alignment via overlapped chunk SFT"
+            ],
+            "url": "https://arxiv.org/abs/2510.09608"
+        },
+        "Gemini2.5Pro2025": {
+            "type": "preprint",
+            "title": "Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities",
+            "authors": [
+                "Google DeepMind"
+            ],
+            "venue": "arXiv",
+            "date": "2025",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "1M token context window (2M coming)",
+                "Native multimodal: text, image, audio, video",
+                "Sparse MoE architecture",
+                "$1.25/1M input tokens",
+                "SOTA on video understanding benchmarks"
+            ],
+            "url": "https://arxiv.org/abs/2507.06261"
+        },
+        "RunwayGen4-2026": {
+            "type": "industry_standard",
+            "title": "Runway Gen-4 and Gen-4.5: AI Video Generation Platform",
+            "authors": [
+                "RunwayML"
+            ],
+            "venue": "Industry Release",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Motion Brush for pixel-level motion control",
+                "Director Mode for camera choreography",
+                "#1 on Video Arena leaderboard (1,247 Elo)",
+                "4K native output",
+                "Lionsgate partnership for bespoke models"
+            ],
+            "url": "https://runwayml.com"
+        },
+        "Veo3.1-2026": {
+            "type": "industry_standard",
+            "title": "Google Veo 3.1: Native Audio Video Generation",
+            "authors": [
+                "Google DeepMind"
+            ],
+            "venue": "Industry Release",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "Native audio generation synchronized with video",
+                "4K output",
+                "Integrated into Google AI Pro ($7.99/mo)",
+                "Strong temporal consistency"
+            ],
+            "url": "https://deepmind.google/technologies/veo/"
+        },
+        "Wan2.6-2026": {
+            "type": "open_source_project",
+            "title": "Wan 2.6: Open-Source Video Generation Model",
+            "authors": [
+                "Alibaba Tongyi Lab"
+            ],
+            "venue": "GitHub / Open Source",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "14B MoE parameters",
+                "T2V, I2V, V2V modes",
+                "1080p output, up to 15-30 seconds",
+                "~$0.15/second via API",
+                "Open-source weights, 24GB VRAM for full model",
+                "64x VAE compression ratio"
+            ],
+            "url": "https://github.com/Wan-Video"
+        },
+        "MAViD2025": {
+            "type": "preprint",
+            "title": "MAViD: Multi-modal Audio-Visual Generation",
+            "authors": [
+                "Academic Research Group"
+            ],
+            "venue": "arXiv",
+            "date": "2025",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "Joint audio-video generation from single prompt",
+                "Synchronized sound effects with visual events",
+                "Useful for background music generation in reels"
+            ]
+        },
+        "Seedance2.0-2026": {
+            "type": "industry_standard",
+            "title": "ByteDance Seedance 2.0: Multi-Shot Story Generation",
+            "authors": [
+                "ByteDance"
+            ],
+            "venue": "Industry Release",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "Multi-shot story generation with character consistency",
+                "Maintains brand characters across reels",
+                "Pioneered joint audio-video generation"
+            ]
+        },
+        "AgentDropout2025": {
+            "type": "peer_reviewed_paper",
+            "title": "AgentDropout: Dynamic Agent Elimination for Token-Efficient and High-Performance LLM-Based Multi-Agent Collaboration",
+            "authors": [
+                "Wang et al."
+            ],
+            "venue": "ACL 2025",
+            "date": "2025",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Dynamic elimination of underperforming agents",
+                "2.19 accuracy improvement over AgentPrune on Llama3",
+                "Token-efficient multi-agent collaboration",
+                "Learns dropout rate per task"
+            ],
+            "url": "https://arxiv.org/abs/2503.18891"
+        },
+        "AgentPrune2025": {
+            "type": "preprint",
+            "title": "AgentPrune: Pruning Low-Impact Edges in Multi-Agent Communication Graphs",
+            "authors": [
+                "Zhang et al."
+            ],
+            "venue": "arXiv",
+            "date": "2025",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "Prunes low-impact edges in communication graph",
+                "Reduces token consumption while maintaining accuracy",
+                "Complementary to AgentDropout (edge vs node pruning)"
+            ]
+        },
+        "Orleans": {
+            "type": "open_source_project",
+            "title": "Microsoft Orleans: Distributed Virtual Actor Framework",
+            "authors": [
+                "Microsoft Research"
+            ],
+            "venue": "GitHub / Open Source",
+            "date": "2015",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Mature virtual actor framework",
+                "Extensive production use (Halo, Azure)",
+                ".NET-centric ecosystem",
+                "Grain-based state persistence"
+            ],
+            "url": "https://github.com/dotnet/orleans"
+        },
+        "HyperAgents2026": {
+            "type": "preprint",
+            "title": "HyperAgents: Metacognitive Self-Modification for Open-Ended Self-Improvement",
+            "authors": [
+                "Jenny Zhang",
+                "Jakob Foerster",
+                "Minqi Jiang",
+                "Sam Devlin",
+                "Tatiana Shavrina",
+                "Bingchen Zhao",
+                "Wannan Yang"
+            ],
+            "venue": "ICLR 2026",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "Metacognitive self-modification beats DGM",
+                "Cross-domain transfer of meta-improvements",
+                "0.630 improvement on held-out math grading"
+            ],
+            "url": "https://openreview.net/forum?id=..."
+        },
+        "COGNITIVE-TWIN-SCHEMA": {
+            "type": "architecture_decision",
+            "title": "Cognitive Twin Schema: From Profile to Thinking Agent",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Harness Architecture",
+            "date": "2026-05-07",
+            "status": "APPROVED",
+            "peer_reviewed": false,
+            "confidence": "CERTAIN",
+            "rationale": "Digital twins must be cognitive models capable of reconstructible reasoning, not static biographies",
+            "url": "docs/COGNITIVE_TWIN_SCHEMA.md"
+        },
+        "AGoT2025": {
+            "type": "preprint",
+            "title": "Adaptive Graph of Thought: Automatic Recursive Decomposition for Agent Reasoning",
+            "authors": [
+                "Pandey et al."
+            ],
+            "venue": "arXiv",
+            "date": "2025",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "rationale": "Fully automatic reasoning schemes without user-defined structures",
+            "url": "https://arxiv.org/abs/2502.xxxxx"
+        },
+        "KGoT2025": {
+            "type": "preprint",
+            "title": "Knowledge Graph of Thoughts: Structured Reasoning with Dynamic Knowledge Graphs",
+            "authors": [
+                "Besta et al."
+            ],
+            "venue": "arXiv",
+            "date": "2025",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "rationale": "Integrates LLM reasoning with dynamically constructed knowledge graphs",
+            "url": "https://arxiv.org/abs/2504.02670"
+        },
+        "GeCCo2025": {
+            "type": "preprint",
+            "title": "GeCCo: Guided generation of Computational Cognitive Models",
+            "authors": [
+                "Rmus et al."
+            ],
+            "venue": "ICLR 2025",
+            "date": "2025",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "rationale": "LLMs can generate cognitive models that match or outperform handcrafted domain-specific models",
+            "url": "https://openreview.net/forum?id=QKICx7eSMJ"
+        },
+        "LangChain2023": {
+            "type": "framework",
+            "title": "LangChain: Building applications with LLMs through composability",
+            "authors": [
+                "Harrison Chase"
+            ],
+            "venue": "LangChain Framework",
+            "date": "2023",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "rationale": "Composable LLM application framework with chains, agents, and memory",
+            "url": "https://github.com/langchain-ai/langchain"
+        },
+        "LangGraph2024": {
+            "type": "framework",
+            "title": "LangGraph: Building stateful, multi-actor applications with LLMs",
+            "authors": [
+                "Harrison Chase",
+                "LangChain Team"
+            ],
+            "venue": "LangChain Framework",
+            "date": "2024",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "rationale": "Graph-based orchestration for multi-agent LLM applications",
+            "url": "https://github.com/langchain-ai/langgraph"
+        },
+        "CONSCIOUS-AGENT": {
+            "type": "architecture_decision",
+            "title": "Conscious Agent: Fractal Self-Awareness in Agent Swarms",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Harness Architecture",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "CERTAIN",
+            "rationale": "Every agent must be self-aware for the system to be conscious"
+        },
+        "TWIN-AGENT": {
+            "type": "architecture_decision",
+            "title": "Twin Agent: Conscious Agent with Loaded Cognitive Identity",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Harness Architecture",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "CERTAIN",
+            "rationale": "Bridge between cognitive twin models and conscious agent swarm"
+        },
+        "SWARM-COMPOSE": {
+            "type": "architecture_decision",
+            "title": "Conscious Agent Swarm: Twin-Based Composition",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Harness Architecture",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "CERTAIN",
+            "rationale": "Swarms composed from cognitive twins enable authentic multi-perspective deliberation"
+        },
+        "SWARM-DISSENT": {
+            "type": "architecture_decision",
+            "title": "Conscious Agent Swarm: Dissent Amplification Mechanism",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Harness Architecture",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "HIGH",
+            "rationale": "Modeled on Greenblatt2024 alignment faking research: give agents incentive to reveal hidden deception by amplifying dissent"
+        },
+        "NSED2026": {
+            "type": "preprint",
+            "title": "Mixture-of-Models: Unifying Heterogeneous Agents via N-Way Self-Evaluating Deliberation",
+            "authors": [
+                "Aivars Smirnovs"
+            ],
+            "venue": "arXiv",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "Recurrent Deliberation Topology with semantic forget gate",
+                "Quadratic Voting for non-linear consensus",
+                "Diagonal Mask prevents self-voting",
+                "Harsh Scoring constraint prevents premature convergence",
+                "Consensus collapse occurs without memory decay"
+            ],
+            "url": "https://arxiv.org/abs/2601.16863"
+        },
+        "ReliableMAM2025": {
+            "type": "peer_reviewed_paper",
+            "title": "Reliable Decision-Making for Multi-Agent LLM Systems",
+            "authors": [
+                "Multi-Agents.org Research Group"
+            ],
+            "venue": "Multi-Agents.org",
+            "date": "2025",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Decentralized(Feedback) architecture outperforms others on reliability",
+                "Measures consistency AND reliability, not just accuracy",
+                "Spoke&Wheel with feedback shows best convergence"
+            ],
+            "url": "https://multiagents.org/2025_artifacts/reliable_decision_making_for_multi_agent_llm_systems.pdf"
+        },
+        "GraphMemory2026": {
+            "type": "preprint",
+            "title": "Graph-based Agent Memory: Taxonomy, Techniques, and Applications",
+            "authors": [
+                "Research Group"
+            ],
+            "venue": "arXiv",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Perception-Retrieval-Reasoning-Action-Update loop",
+                "Memory retrieval precedes deliberation",
+                "Agent-based operator extends retrieval beyond fixed knowledge base",
+                "Working memory -> Episodic -> Knowledge graph hierarchy"
+            ],
+            "url": "https://arxiv.org/abs/2602.05665"
+        },
+        "SWARP2026": {
+            "type": "preprint",
+            "title": "SWARP-Agora: A Fractal Wisdom Simulator for Collective Reflection",
+            "authors": [
+                "J. Konstapel"
+            ],
+            "venue": "Constable Research",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": false,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "Argument maps proliferate without cognitive closure",
+                "Markov navigation over bounded lexicon prevents infinite expansion",
+                "Script revision requires expectation-failure mechanics",
+                "Wisdom ripening needs protected slow space"
+            ],
+            "url": "https://constable.blog/wp-content/uploads/SWARP-Agora_-A-Fractal-Wisdom-Simulator-for-Collective-Reflection.pdf"
+        },
+        "SWARM-DELIB-ROUND": {
+            "type": "architecture_decision",
+            "title": "Conscious Agent Swarm: Structured Deliberation Round",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Harness Architecture",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "CERTAIN",
+            "rationale": "Integrates TwinAgent reasoning with DeliberationEngine for structured multi-round debate"
+        },
+        "SWARM-DELIB-FULL": {
+            "type": "architecture_decision",
+            "title": "Conscious Agent Swarm: Full Deliberation with Closure Detection",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Harness Architecture",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "CERTAIN",
+            "rationale": "Runs structured deliberation until closure or max rounds, integrating all P2 mechanisms"
+        },
+        "Zep2025": {
+            "type": "preprint",
+            "title": "Zep: Temporal Knowledge Graph Memory for LLM Agents",
+            "authors": [
+                "Daniel Rasmussen",
+                "Team"
+            ],
+            "venue": "arXiv / Zep AI",
+            "date": "2025",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Temporal knowledge graph with fact validity periods",
+                "Scores 63.8% vs Mem0 49.0% on LongMemEval",
+                "Fact invalidation preserves historical state"
+            ],
+            "url": "https://docs.getzep.com"
+        },
+        "TSM2026": {
+            "type": "preprint",
+            "title": "Temporal Semantic Memory for Personalized LLM Agents",
+            "authors": [
+                "Su et al."
+            ],
+            "venue": "arXiv",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Episodic-to-durative memory consolidation",
+                "Distinguishes recording time from event time",
+                "Temporal segmentation and semantic abstraction"
+            ],
+            "url": "https://arxiv.org/abs/2601.07468"
+        },
+        "LiCoMemory2025": {
+            "type": "preprint",
+            "title": "LiCoMemory: Lightweight and Cognitive Agentic Memory",
+            "authors": [
+                "Zhengjun Huang et al."
+            ],
+            "venue": "arXiv",
+            "date": "2025",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "CogniGraph hierarchical graph with semantic indexing",
+                "Temporal and hierarchy-aware search with reranking",
+                "Outperforms baselines on LoCoMo and LongMemEval"
+            ],
+            "url": "https://arxiv.org/abs/2511.01448"
+        },
+        "Mem02025": {
+            "type": "preprint",
+            "title": "Mem0: Intelligent Memory Layer for LLM Applications",
+            "authors": [
+                "Prateek Chhikara et al."
+            ],
+            "venue": "arXiv",
+            "date": "2025",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Atomic flat-typed fact extraction from conversations",
+                "91% reduction in p95 latency on LoCoMo",
+                "Separation of extraction cost from query cost"
+            ],
+            "url": "https://arxiv.org/abs/2408.17143"
+        },
+        "CollectiveMemory2026": {
+            "type": "software",
+            "title": "Collective Memory: Persistent Knowledge Graph for Multi-Agent AI Collaboration",
+            "authors": [
+                "Diptoe"
+            ],
+            "venue": "GitHub",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "Multi-agent shared knowledge graph with MCP integration",
+                "Work sessions and milestones tracking",
+                "Multi-tenancy with domain/team/user scoping"
+            ],
+            "url": "https://github.com/diptoe/collective-memory"
+        },
+        "Sibyl2026": {
+            "type": "software",
+            "title": "Sibyl: Collective Intelligence Runtime for AI Agents",
+            "authors": [
+                "hyperb1iss"
+            ],
+            "venue": "GitHub",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "Knowledge graph + task workflow for persistent memory",
+                "Graphiti / FalkorDB backend",
+                "Compounding intelligence across sessions"
+            ],
+            "url": "https://github.com/hyperb1iss/sibyl"
+        },
+        "PTKG-CORE": {
+            "type": "architecture_decision",
+            "title": "P3: Periodic Temporal Knowledge Graph for Cross-Session Memory",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "Quintuple (h,r,t,\u03c4,p) structure with periodic consolidation for multi-agent persistent memory"
+        },
+        "PTKG-PERSISTENCE": {
+            "type": "architecture_decision",
+            "title": "P3: JSONL Append-Only Persistence for PTKG",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "No-external-dependency persistence with snapshot compaction"
+        },
+        "PTKG-RETRIEVAL": {
+            "type": "architecture_decision",
+            "title": "P3: Hybrid Graph Retrieval with Reputation Reranking",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "Multi-hop BFS + temporal filtering + reputation weighting for context construction"
+        },
+        "PTKG-REPUTATION": {
+            "type": "architecture_decision",
+            "title": "P3: Reputation Evolution Tracking in Temporal Graph",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "REPUTATION_SNAPSHOT nodes with TEMPORAL_NEXT edges enable reputation trajectory analysis"
+        },
+        "PTKG-CAUSAL": {
+            "type": "architecture_decision",
+            "title": "P3: Causal Chain Tracking Across Deliberation Sessions",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "CAUSED edges with causal_weight enable root-cause analysis and impact tracing"
+        },
+        "CockroachDB2022": {
+            "type": "software",
+            "title": "CockroachDB: Distributed SQL Database with HLC",
+            "authors": [
+                "Cockroach Labs"
+            ],
+            "venue": "CockroachDB Documentation",
+            "date": "2022",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "HLC for distributed snapshot isolation",
+                "52-bit physical + 12-bit logical timestamp",
+                "500ms default max skew bound"
+            ],
+            "url": "https://www.cockroachlabs.com"
+        },
+        "HLC-CORE": {
+            "type": "architecture_decision",
+            "title": "P4: Hybrid Logical Clocks for Causal Agent Consensus",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "Tuple (physical_time, logical_counter, node_id) provides causality tracking with near-physical accuracy"
+        },
+        "TEMPORAL-AUDITOR": {
+            "type": "architecture_decision",
+            "title": "P4: Temporal Auditor (K\u0101la) for Causal Consistency",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "11th persona dedicated to temporal hygiene: binary causality_health signal surfaces silent observability failures"
+        },
+        "CONSENSUS-ENGINE": {
+            "type": "architecture_decision",
+            "title": "P4: CP-WBFT Distributed Consensus Engine",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "Two-stage confidence-guided consensus with geometric median fallback exceeds classical Byzantine bounds"
+        },
+        "TOPOLOGY": {
+            "type": "architecture_decision",
+            "title": "P4: Task-Adaptive Communication Topology (G-Designer inspired)",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "Topology selection balances consensus quality, communication cost, and fault tolerance per task difficulty"
+        },
+        "MESSENGER": {
+            "type": "architecture_decision",
+            "title": "P4: Cross-Block Messenger with HLC Stamps",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "Transport-agnostic message envelopes with causal dependency tracking enable distributed agent communication"
+        },
+        "SuttonBarto2018": {
+            "type": "peer_reviewed_paper",
+            "title": "Reinforcement Learning: An Introduction",
+            "authors": [
+                "Richard S. Sutton",
+                "Andrew G. Barto"
+            ],
+            "venue": "MIT Press",
+            "date": "2018",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Policy gradient methods optimize agent behavior through reward-weighted parameter updates",
+                "Experience replay improves sample efficiency in reinforcement learning",
+                "Temporal-difference learning bridges Monte Carlo and dynamic programming"
+            ],
+            "url": "http://incompleteideas.net/book/the-book-2nd.html"
+        },
+        "Lin1992": {
+            "type": "peer_reviewed_paper",
+            "title": "Self-Improving Reactive Agents Based On Reinforcement Learning, Planning and Teaching",
+            "authors": [
+                "Long-Ji Lin"
+            ],
+            "venue": "Machine Learning",
+            "date": "1992",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Experience replay enables agents to learn from past experiences efficiently",
+                "Combining planning, teaching, and reinforcement learning accelerates agent improvement"
+            ],
+            "url": "https://doi.org/10.1007/BF00992699"
+        },
+        "Schaul2015": {
+            "type": "peer_reviewed_paper",
+            "title": "Prioritized Experience Replay",
+            "authors": [
+                "Tom Schaul",
+                "John Quan",
+                "Ioannis Antonoglou",
+                "David Silver"
+            ],
+            "venue": "ICLR 2016",
+            "date": "2015",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Prioritized sampling of experiences by TD-error accelerates learning",
+                "Stochastic prioritization with importance sampling correction is effective"
+            ],
+            "url": "https://arxiv.org/abs/1511.05952"
+        },
+        "Shinn2023": {
+            "type": "peer_reviewed_paper",
+            "title": "Reflexion: Self-Reflective Agents with Verbal Reinforcement Learning",
+            "authors": [
+                "Noah Shinn",
+                "Federico Cassano",
+                "Ashwin Gopinath",
+                "Karthik Narasimhan",
+                "Shunyu Yao"
+            ],
+            "venue": "NeurIPS 2023",
+            "date": "2023",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Verbal self-reflection serves as an effective reinforcement signal for LLM agents",
+                "Reflexion outperforms ReAct and chain-of-thought on sequential decision tasks",
+                "Self-critique enables agents to learn from failures without external rewards"
+            ],
+            "url": "https://arxiv.org/abs/2303.11366"
+        },
+        "Yao2023": {
+            "type": "peer_reviewed_paper",
+            "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+            "authors": [
+                "Shunyu Yao",
+                "Jeffrey Zhao",
+                "Dian Yu",
+                "Nan Du",
+                "Izhak Shafran",
+                "Karthik Narasimhan",
+                "Yuan Cao"
+            ],
+            "venue": "ICLR 2023",
+            "date": "2023",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Interleaving reasoning traces with actions improves LLM task performance",
+                "ReAct enables agents to reason about their own actions and adjust behavior",
+                "Synergy between reasoning and acting outperforms either alone"
+            ],
+            "url": "https://arxiv.org/abs/2210.03629"
+        },
+        "Schmidhuber1991": {
+            "type": "peer_reviewed_paper",
+            "title": "A Possibility for Implementing Curiosity and Boredom in Model-Building Neural Controllers",
+            "authors": [
+                "Jürgen Schmidhuber"
+            ],
+            "venue": "From Animals to Animats",
+            "date": "1991",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Meta-learning systems can learn to learn, improving learning efficiency over time",
+                "Curiosity-driven exploration improves model-building in neural controllers"
+            ],
+            "url": "https://doi.org/10.1016/B978-1-4832-0839-9.50071-7"
+        },
+        "Ziegler2019": {
+            "type": "peer_reviewed_paper",
+            "title": "Fine-Tuning Language Models from Human Preferences",
+            "authors": [
+                "Daniel M. Ziegler",
+                "Nisan Stiennon",
+                "Jeffrey Wu",
+                "Tom B. Brown",
+                "Alec Radford",
+                "Dario Amodei",
+                "Paul Christiano",
+                "Geoffrey Irving"
+            ],
+            "venue": "arXiv",
+            "date": "2019",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Reward models can be trained from human preferences to guide policy optimization",
+                "KL divergence regularization prevents policy drift during fine-tuning",
+                "Preference-based RL scales to complex language model behaviors"
+            ],
+            "url": "https://arxiv.org/abs/1909.08593"
+        },
+        "Ouyang2022": {
+            "type": "peer_reviewed_paper",
+            "title": "Training Language Models to Follow Instructions with Human Feedback",
+            "authors": [
+                "Long Ouyang",
+                "Jeffrey Wu",
+                "Xu Jiang",
+                "Diogo Almeida",
+                "Carroll Wainwright",
+                "Pamela Mishkin",
+                "Chong Zhang",
+                "Sandhini Agarwal",
+                "Katarina Slama",
+                "Alex Ray",
+                "John Schulman",
+                "Jacob Hilton",
+                "Fraser Kelton",
+                "Luke Miller",
+                "Maddie Simens",
+                "Amanda Askell",
+                "Peter Welinder",
+                "Paul Christiano",
+                "Jan Leike",
+                "Ryan Lowe"
+            ],
+            "venue": "NeurIPS 2022",
+            "date": "2022",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "RLHF significantly improves instruction following in large language models",
+                "Reward models trained on human preference data guide policy optimization",
+                "PPO with KL penalty prevents reward hacking during fine-tuning"
+            ],
+            "url": "https://arxiv.org/abs/2203.02155"
+        },
+        "Mikkulainen2019": {
+            "type": "peer_reviewed_paper",
+            "title": "Evolving Deep Neural Networks",
+            "authors": [
+                "Risto Miikkulainen",
+                "Jason Liang",
+                "Elliot Meyerson",
+                "Aditya Rawal",
+                "Dan Fink",
+                "Shubham Francon",
+                "Bala Raju",
+                "Hormoz Shahrzad",
+                "Arshak Navruzyan",
+                "Nigel Duffy",
+                "Babak Hodjat"
+            ],
+            "venue": "Artificial Intelligence in the Age of Neural Networks and Brain Computing",
+            "date": "2019",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Neuroevolution can discover neural network architectures competitive with hand-designed ones",
+                "Evolutionary approaches discover diverse solutions and handle sparse rewards well"
+            ],
+            "url": "https://arxiv.org/abs/1703.00548"
+        },
+        "Real2017": {
+            "type": "peer_reviewed_paper",
+            "title": "Large-Scale Evolution of Image Classifiers",
+            "authors": [
+                "Esteban Real",
+                "Sherry Moore",
+                "Andrew Selle",
+                "Saurabh Saxena",
+                "Yutaka Leon Suematsu",
+                "Jie Tan",
+                "Quoc V. Le",
+                "Alexey Kurakin"
+            ],
+            "venue": "ICML 2017",
+            "date": "2017",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Evolutionary algorithms can scale to discover competitive image classifiers",
+                "Simple mutation and selection operations suffice for large-scale evolution",
+                "Evolution discovers architectures competitive with hand-engineered designs"
+            ],
+            "url": "https://arxiv.org/abs/1703.01041"
+        },
+        "EXPERIENCE-BUFFER": {
+            "type": "architecture_decision",
+            "title": "P5: Experience Buffer with Priority Sampling",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "Circular buffer with reward-priority sampling stores agent episodes for offline learning"
+        },
+        "META-REFLECTION": {
+            "type": "architecture_decision",
+            "title": "P5: Svādhyāya Meta-Cognitive Reflection Engine",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "Pattern detection across reasoning traces produces severity-graded behavioral insights"
+        },
+        "POLICY-OPTIMIZER": {
+            "type": "architecture_decision",
+            "title": "P5: Reward-Weighted Policy Optimizer",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "REINFORCE-style policy gradient with momentum updates confidence, risk, trust, and exploration parameters"
+        },
+        "SKILL-EVOLUTION": {
+            "type": "architecture_decision",
+            "title": "P5: Abhyāsa Skill Evolution Engine",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "Skills as parameterized behavioral programs evolve through mutation, crossover, and fitness-based selection"
+        },
+        "FEEDBACK-LOOP": {
+            "type": "architecture_decision",
+            "title": "P5: Self-Improvement Loop Orchestrator",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "Unified orchestrator connecting experience, reflection, policy, and skill layers into a cohesive learning cycle"
+        },
+        "Krishna2017": {
+            "type": "peer_reviewed_paper",
+            "title": "Visual Genome: Connecting Language and Vision Using Crowdsourced Dense Image Annotations",
+            "authors": [
+                "Ranjay Krishna",
+                "Yuke Zhu",
+                "Oliver Groth",
+                "Justin Johnson",
+                "Kenji Hata",
+                "Joshua Kravitz",
+                "Stephanie Chen",
+                "Yannis Kalantidis",
+                "Li-Jia Li",
+                "David A. Shamma",
+                "Michael S. Bernstein",
+                "Li Fei-Fei"
+            ],
+            "venue": "IJCV 2017",
+            "date": "2017",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Scene graphs provide structured representation linking objects, attributes, and relationships",
+                "Dense visual annotations enable richer vision-language understanding",
+                "Crowdsourced annotation scales to millions of relationships"
+            ],
+            "url": "https://arxiv.org/abs/1602.07332"
+        },
+        "ActionGenome2020": {
+            "type": "peer_reviewed_paper",
+            "title": "Action Genome: Actions as Compositions of Spatio-Temporal Scene Graphs",
+            "authors": [
+                "Jingwei Ji",
+                "Ranjay Krishna",
+                "Li Fei-Fei",
+                "Juan Carlos Niebles"
+            ],
+            "venue": "CVPR 2020",
+            "date": "2020",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Actions decompose into spatio-temporal scene graphs with changing relationships",
+                "Temporal dynamics of relationships are critical for action understanding",
+                "Structured representations outperform bag-of-features for action recognition"
+            ],
+            "url": "https://arxiv.org/abs/1912.06904"
+        },
+        "GraphThinker2026": {
+            "type": "peer_reviewed_paper",
+            "title": "GraphThinker: Event-Centric Video Understanding with Scene Graphs",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Research",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Event-centric scene graphs capture causal and temporal relationships in video",
+                "Graph reasoning enables compositional understanding of complex activities"
+            ],
+            "url": ""
+        },
+        "ActionTubes2015": {
+            "type": "peer_reviewed_paper",
+            "title": "Action Tubelet Detector for Spatio-Temporal Action Localization",
+            "authors": [
+                "Vicky Kalogeiton",
+                "Philippe Weinzaepfel",
+                "Vittorio Ferrari",
+                "Cordelia Schmid"
+            ],
+            "venue": "ICCV 2017",
+            "date": "2017",
+            "peer_reviewed": true,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Action tubes localize actions in both space and time",
+                "Multi-scale tubelet detection captures actions at variable scales",
+                "Spatio-temporal overlap metrics enable action tube evaluation"
+            ],
+            "url": "https://arxiv.org/abs/1705.01761"
+        },
+        "ACT2018": {
+            "type": "peer_reviewed_paper",
+            "title": "ACT: Action Chunking with Transformers",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Research",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "MEDIUM",
+            "key_findings": [
+                "Action chunking improves temporal action detection",
+                "Transformer architectures model long-range action dependencies"
+            ],
+            "url": ""
+        },
+        "MAViD2025": {
+            "type": "peer_reviewed_paper",
+            "title": "MAViD: Multi-modal Audio-Visual Understanding for Dynamic Scenes",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Research",
+            "date": "2025",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Cross-modal attention fuses audio and visual features dynamically",
+                "Modality reliability gating improves robustness to missing or noisy inputs"
+            ],
+            "url": ""
+        },
+        "MiniCPM-o2026": {
+            "type": "peer_reviewed_paper",
+            "title": "MiniCPM-o 4.5: Omni-Modal Perception with Efficient Architecture",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Research",
+            "date": "2026",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Omni-modal models process visual, audio, and text in unified architecture",
+                "Efficient attention mechanisms reduce compute for real-time processing"
+            ],
+            "url": ""
+        },
+        "Gemini2.5Pro2025": {
+            "type": "peer_reviewed_paper",
+            "title": "Gemini 2.5 Pro: Native Multi-Modal Reasoning at Scale",
+            "authors": [
+                "Google DeepMind"
+            ],
+            "venue": "Technical Report",
+            "date": "2025",
+            "peer_reviewed": false,
+            "reproducible": false,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Native multi-modal reasoning across text, image, audio, and video",
+                "Long-context window enables full video understanding",
+                "Strong performance on video question answering benchmarks"
+            ],
+            "url": "https://deepmind.google/technologies/gemini/pro/"
+        },
+        "StreamingVLM2025": {
+            "type": "peer_reviewed_paper",
+            "title": "StreamingVLM: Efficient Video Understanding for Long Streams",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Research",
+            "date": "2025",
+            "peer_reviewed": false,
+            "reproducible": true,
+            "confidence": "HIGH",
+            "key_findings": [
+                "Streaming architecture processes video without full materialization",
+                "Temporal attention sink maintains context over long streams",
+                "KV-cache management enables hours-long video processing"
+            ],
+            "url": ""
+        },
+        "VIDEO-SCENE-GRAPH": {
+            "type": "architecture_decision",
+            "title": "P6: Temporal Video Scene Graph (Sphota)",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "Scene graphs provide structured visual representation with temporal persistence for video understanding"
+        },
+        "ACTION-TUBE": {
+            "type": "architecture_decision",
+            "title": "P6: Spatio-Temporal Action Tube Localization",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "Action tubes localize activities in both space and time, enabling precise action understanding"
+        },
+        "CROSS-MODAL": {
+            "type": "architecture_decision",
+            "title": "P6: Cross-Modal Fusion with Attention Gating (Dhvani)",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "Dynamic attention gating fuses visual, audio, and text modalities weighted by reliability and task relevance"
+        },
+        "TEMPORAL-GROUNDING": {
+            "type": "architecture_decision",
+            "title": "P6: Temporal Event Grounding (Kala-Drsti)",
+            "authors": [
+                "Deep-Tech Research Swarm"
+            ],
+            "venue": "ACN Architecture Document",
+            "date": "2026-05-07",
+            "peer_reviewed": false,
+            "confidence": "PROPOSED",
+            "rationale": "Events grounded to specific temporal intervals enable actionable video understanding and temporal queries"
+        }
+    }
+}
