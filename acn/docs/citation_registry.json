@@ -1,0 +1,1152 @@
+{
+  "real": {
+    "Guo2024": {
+      "file": "src/engines/compute_substrate.py",
+      "paper": "Large Language Model Based Multi-Agents: A Survey of Progress and Challenges",
+      "venue": "IJCAI 2024"
+    },
+    "Besta2024": {
+      "file": "src/engines/compute_substrate.py",
+      "paper": "Graph of Thoughts: Solving Elaborate Problems with Large Language Models",
+      "venue": "AAAI 2024"
+    },
+    "Castro1999": {
+      "file": "src/engines/compute_substrate.py",
+      "paper": "Practical Byzantine Fault Tolerance",
+      "venue": "OSDI 1999"
+    },
+    "Dean2008": {
+      "file": "src/engines/compute_substrate.py",
+      "paper": "MapReduce: Simplified Data Processing on Large Clusters",
+      "venue": "ACM TURC"
+    }
+  },
+  "internal": {
+    "PERSONA-DISTILLER": {
+      "file": "src/memory/persona_distiller.py",
+      "paper": "Layered Memory Architecture: Cognitive Profile Evolution",
+      "venue": "ACN Architecture Document"
+    },
+    "ATOMIZER": {
+      "file": "src/memory/atomizer.py",
+      "paper": "Layered Memory Architecture: Trace Atomization",
+      "venue": "ACN Architecture Document"
+    },
+    "CAUSAL-CHAIN": {
+      "file": "src/memory/causal_chain.py",
+      "paper": "Causal Chain Tracking in Periodic Temporal Knowledge Graphs",
+      "venue": "ACN Architecture Document"
+    },
+    "TWIN-MEMORY-PROFILE": {
+      "file": "src/memory/twin_memory_profile.py",
+      "paper": "Layered Memory Architecture: Twin Binding",
+      "venue": "ACN Architecture Document"
+    },
+    "EPISODIC-STORE": {
+      "file": "src/memory/stores.py",
+      "paper": "Meta-Cognitive Harness: Episodic Memory Store",
+      "venue": "ACN Architecture Document"
+    },
+    "SEMANTIC-STORE": {
+      "file": "src/memory/stores.py",
+      "paper": "Meta-Cognitive Harness: Semantic Memory Store",
+      "venue": "ACN Architecture Document"
+    },
+    "PROCEDURAL-STORE": {
+      "file": "src/memory/stores.py",
+      "paper": "Meta-Cognitive Harness: Procedural Memory Store",
+      "venue": "ACN Architecture Document"
+    },
+    "PROSPECTIVE-STORE": {
+      "file": "src/memory/stores.py",
+      "paper": "Meta-Cognitive Harness: Prospective Memory Store",
+      "venue": "ACN Architecture Document"
+    },
+    "WORKING-STORE": {
+      "file": "src/memory/stores.py",
+      "paper": "Meta-Cognitive Harness: Working Memory Store",
+      "venue": "ACN Architecture Document"
+    },
+    "REPUTATION-MODEL": {
+      "file": "src/memory/reputation_graph.py",
+      "paper": "Reputation Evolution in Temporal Knowledge Graphs",
+      "venue": "ACN Architecture Document"
+    },
+    "REPUTATION-TRACKER": {
+      "file": "src/memory/reputation_graph.py",
+      "paper": "Reputation Evolution in Temporal Knowledge Graphs",
+      "venue": "ACN Architecture Document"
+    },
+    "PTKG-NODE-TYPE": {
+      "file": "src/memory/ptkg.py",
+      "paper": "Periodic Temporal Knowledge Graph for Agent Memory",
+      "venue": "ACN Architecture Document"
+    },
+    "PTKG-EDGE-TYPE": {
+      "file": "src/memory/ptkg.py",
+      "paper": "Periodic Temporal Knowledge Graph for Agent Memory",
+      "venue": "ACN Architecture Document"
+    },
+    "PTKG-NODE": {
+      "file": "src/memory/ptkg.py",
+      "paper": "Periodic Temporal Knowledge Graph for Agent Memory",
+      "venue": "ACN Architecture Document"
+    },
+    "PTKG-EDGE": {
+      "file": "src/memory/ptkg.py",
+      "paper": "Periodic Temporal Knowledge Graph for Agent Memory",
+      "venue": "ACN Architecture Document"
+    },
+    "PTKG-PERIOD": {
+      "file": "src/memory/ptkg.py",
+      "paper": "Periodic Temporal Knowledge Graph for Agent Memory",
+      "venue": "ACN Architecture Document"
+    },
+    "PTKG": {
+      "file": "src/memory/ptkg.py",
+      "paper": "Periodic Temporal Knowledge Graph for Agent Memory",
+      "venue": "ACN Architecture Document"
+    },
+    "PTKG-BFS": {
+      "file": "src/memory/ptkg.py",
+      "paper": "Periodic Temporal Knowledge Graph for Agent Memory",
+      "venue": "ACN Architecture Document"
+    },
+    "PTKG-CAUSAL-PATH": {
+      "file": "src/memory/ptkg.py",
+      "paper": "Periodic Temporal Knowledge Graph for Agent Memory",
+      "venue": "ACN Architecture Document"
+    },
+    "PTKG-CONSOLIDATE": {
+      "file": "src/memory/ptkg.py",
+      "paper": "Periodic Temporal Knowledge Graph for Agent Memory",
+      "venue": "ACN Architecture Document"
+    },
+    "RETRIEVAL-STRATEGY": {
+      "file": "src/memory/graph_retrieval.py",
+      "paper": "Graph Retrieval Strategies for PTKG",
+      "venue": "ACN Architecture Document"
+    },
+    "GRAPH-RETRIEVER": {
+      "file": "src/memory/graph_retrieval.py",
+      "paper": "Graph Retrieval Strategies for PTKG",
+      "venue": "ACN Architecture Document"
+    },
+    "PTKG-PERSIST": {
+      "file": "src/memory/persistence.py",
+      "paper": "Periodic Temporal Knowledge Graph for Agent Memory",
+      "venue": "ACN Architecture Document"
+    },
+    "MEMORY-TYPE": {
+      "file": "src/memory/architecture.py",
+      "paper": "Meta-Cognitive Harness: Multi-Modal Memory Architecture",
+      "venue": "ACN Architecture Document"
+    },
+    "MEMORY-RETRIEVAL": {
+      "file": "src/memory/architecture.py",
+      "paper": "Meta-Cognitive Harness: Multi-Modal Memory Architecture",
+      "venue": "ACN Architecture Document"
+    },
+    "MEMORY-TRACE": {
+      "file": "src/memory/architecture.py",
+      "paper": "Meta-Cognitive Harness: Multi-Modal Memory Architecture",
+      "venue": "ACN Architecture Document"
+    },
+    "MEMORY-ARCH": {
+      "file": "src/memory/architecture.py",
+      "paper": "Meta-Cognitive Harness: Multi-Modal Memory Architecture",
+      "venue": "ACN Architecture Document"
+    },
+    "MEMORY-STORE": {
+      "file": "src/memory/architecture.py",
+      "paper": "Meta-Cognitive Harness: Multi-Modal Memory Architecture",
+      "venue": "ACN Architecture Document"
+    },
+    "MEMORY-RETRIEVE": {
+      "file": "src/memory/architecture.py",
+      "paper": "Meta-Cognitive Harness: Multi-Modal Memory Architecture",
+      "venue": "ACN Architecture Document"
+    },
+    "MEMORY-STATS": {
+      "file": "src/memory/architecture.py",
+      "paper": "Meta-Cognitive Harness: Multi-Modal Memory Architecture",
+      "venue": "ACN Architecture Document"
+    },
+    "SCENARIO-MINER": {
+      "file": "src/memory/scenario_miner.py",
+      "paper": "Layered Memory Architecture: Pattern Extraction",
+      "venue": "ACN Architecture Document"
+    },
+    "ATOM-TYPE": {
+      "file": "src/memory/layered_models.py",
+      "paper": "Layered Memory Architecture for Digital Twins",
+      "venue": "ACN Architecture Document"
+    },
+    "MEMORY-ATOM": {
+      "file": "src/memory/layered_models.py",
+      "paper": "Layered Memory Architecture for Digital Twins",
+      "venue": "ACN Architecture Document"
+    },
+    "SCENARIO-PATTERN": {
+      "file": "src/memory/layered_models.py",
+      "paper": "Layered Memory Architecture for Digital Twins",
+      "venue": "ACN Architecture Document"
+    },
+    "PERSONA-MEMORY": {
+      "file": "src/memory/layered_models.py",
+      "paper": "Layered Memory Architecture for Digital Twins",
+      "venue": "ACN Architecture Document"
+    },
+    "LAYERED-CONTEXT": {
+      "file": "src/memory/layered_models.py",
+      "paper": "Layered Memory Architecture for Digital Twins",
+      "venue": "ACN Architecture Document"
+    },
+    "LAYERED-MEMORY-SYSTEM": {
+      "file": "src/memory/layered_memory.py",
+      "paper": "Layered Memory Architecture for Digital Twins",
+      "venue": "ACN Architecture Document"
+    },
+    "SQLITE-MEMORY": {
+      "file": "src/memory/sqlite_backend.py",
+      "paper": "SQLite Persistence for Cognitive Memory",
+      "venue": "ACN Memory Architecture"
+    },
+    "HLC-TIMESTAMP": {
+      "file": "src/consensus/hlc.py",
+      "paper": "Hybrid Logical Clocks for Distributed Agent Consensus",
+      "venue": "ACN Architecture Document"
+    },
+    "HYBRID-LOGICAL-CLOCK": {
+      "file": "src/consensus/hlc.py",
+      "paper": "Hybrid Logical Clocks for Distributed Agent Consensus",
+      "venue": "ACN Architecture Document"
+    },
+    "TOPOLOGY-TYPE": {
+      "file": "src/consensus/topology.py",
+      "paper": "Communication Topology Optimization for Multi-Agent Swarms",
+      "venue": "ACN Architecture Document"
+    },
+    "TOPOLOGY-OPTIMIZER": {
+      "file": "src/consensus/topology.py",
+      "paper": "Communication Topology Optimization for Multi-Agent Swarms",
+      "venue": "ACN Architecture Document"
+    },
+    "ACADEMIC-VERIFIER": {
+      "file": "src/consensus/academic_verifier.py",
+      "paper": "Research-Grounded Consensus Verification",
+      "venue": "ACN Consensus Architecture"
+    },
+    "CLOCK-PROTOCOL": {
+      "file": "src/consensus/clock.py",
+      "paper": "Clock Protocol: Decoupled Time Abstraction for Distributed Consensus",
+      "venue": "ACN Architecture Document"
+    },
+    "CROSS-BLOCK-MESSENGER": {
+      "file": "src/consensus/cross_block_messenger.py",
+      "paper": "Cross-Block Messenger: Distributed Message Passing with HLC",
+      "venue": "ACN Architecture Document"
+    },
+    "AUDIT-MISSING-TIMESTAMP": {
+      "file": "src/consensus/audit_rules.py",
+      "paper": "Temporal Auditor: Missing Timestamp Rule",
+      "venue": "ACN Architecture Document"
+    },
+    "AUDIT-SKEW-EXCEEDED": {
+      "file": "src/consensus/audit_rules.py",
+      "paper": "Temporal Auditor: Clock Skew Rule",
+      "venue": "ACN Architecture Document"
+    },
+    "AUDIT-MESSAGE-FROM-FUTURE": {
+      "file": "src/consensus/audit_rules.py",
+      "paper": "Temporal Auditor: Message From Future Rule",
+      "venue": "ACN Architecture Document"
+    },
+    "TEMPORAL-AUDITOR": {
+      "file": "src/consensus/temporal_auditor.py",
+      "paper": "Temporal Auditor (K\u0101la): Causal Consistency Guardian",
+      "venue": "ACN Architecture Document"
+    },
+    "CAUSALITY-HEALTH": {
+      "file": "src/consensus/temporal_types.py",
+      "paper": "Temporal Auditor: Causal Consistency Guardian",
+      "venue": "ACN Architecture Document"
+    },
+    "CAUSALITY-VIOLATION": {
+      "file": "src/consensus/temporal_types.py",
+      "paper": "Temporal Auditor: Causal Consistency Guardian",
+      "venue": "ACN Architecture Document"
+    },
+    "CONSENSUS-PHASE": {
+      "file": "src/consensus/distributed_consensus.py",
+      "paper": "CP-WBFT: Confidence Probe-based Weighted Byzantine Fault Tolerant Consensus",
+      "venue": "ACN Architecture Document"
+    },
+    "CP-WBFT-ENGINE": {
+      "file": "src/consensus/distributed_consensus.py",
+      "paper": "CP-WBFT: Confidence Probe-based Weighted Byzantine Fault Tolerant Consensus",
+      "venue": "ACN Architecture Document"
+    },
+    "TWIN-TOOL-REGISTRY": {
+      "file": "src/agents/twin_tools.py",
+      "paper": "Strands AI Functions: Agent-as-Tool Composition",
+      "venue": "ACN Agents Architecture"
+    },
+    "TOOL-CALLING-TWIN": {
+      "file": "src/agents/twin_tools.py",
+      "paper": "Strands AI Functions: Tool-Calling Agent",
+      "venue": "ACN Agents Architecture"
+    },
+    "SWARM-TASK": {
+      "file": "src/agents/swarm_orchestrator.py",
+      "paper": "Conscious Agent Swarm: Task Definition",
+      "venue": "ACN Architecture Document"
+    },
+    "SWARM-ORCHESTRATOR": {
+      "file": "src/agents/swarm_orchestrator.py",
+      "paper": "Conscious Agent Swarm: Orchestration Architecture",
+      "venue": "ACN Architecture Document"
+    },
+    "SWARM-ACTIVATE": {
+      "file": "src/agents/swarm_orchestrator.py",
+      "paper": "Conscious Agent Swarm: Activation Protocol",
+      "venue": "ACN Architecture Document"
+    },
+    "SWARM-COMPOSE": {
+      "file": "src/agents/swarm_orchestrator.py",
+      "paper": "Conscious Agent Swarm: Twin Composition",
+      "venue": "ACN Architecture Document"
+    },
+    "SWARM-EXECUTE-ROUND": {
+      "file": "src/agents/swarm_orchestrator.py",
+      "paper": "Conscious Agent Swarm: Round Execution",
+      "venue": "ACN Architecture Document"
+    },
+    "SWARM-FULL-DELIB": {
+      "file": "src/agents/swarm_orchestrator.py",
+      "paper": "Conscious Agent Swarm: Full Deliberation",
+      "venue": "ACN Architecture Document"
+    },
+    "SWARM-CONSENSUS": {
+      "file": "src/agents/swarm_orchestrator.py",
+      "paper": "Conscious Agent Swarm: Consensus Detection",
+      "venue": "ACN Architecture Document"
+    },
+    "SWARM-DISSENT": {
+      "file": "src/agents/swarm_orchestrator.py",
+      "paper": "Conscious Agent Swarm: Dissent Amplification",
+      "venue": "ACN Architecture Document"
+    },
+    "SWARM-SYNTHESIS": {
+      "file": "src/agents/swarm_orchestrator.py",
+      "paper": "Conscious Agent Swarm: Synthesis Report",
+      "venue": "ACN Architecture Document"
+    },
+    "SWARM-GRAPH-INIT": {
+      "file": "src/agents/swarm_orchestrator.py",
+      "paper": "Swarm Orchestrator: Graph Memory Initialization",
+      "venue": "ACN Architecture Document"
+    },
+    "SWARM-GRAPH-PERSIST": {
+      "file": "src/agents/swarm_orchestrator.py",
+      "paper": "Swarm Orchestrator: Deliberation Persistence",
+      "venue": "ACN Architecture Document"
+    },
+    "SANDBOX-RESULT": {
+      "file": "src/agents/sandbox_agent.py",
+      "paper": "SandboxAgent: Execution Result",
+      "venue": "ACN Architecture Document"
+    },
+    "SANDBOX-AGENT": {
+      "file": "src/agents/sandbox_agent.py",
+      "paper": "SandboxAgent: Conscious Code Execution",
+      "venue": "ACN Harness Architecture"
+    },
+    "SANDBOX-EXECUTE": {
+      "file": "src/agents/sandbox_agent.py",
+      "paper": "SandboxAgent: Execution Protocol",
+      "venue": "ACN Harness Architecture"
+    },
+    "SANDBOX-BENCHMARK": {
+      "file": "src/agents/sandbox_agent.py",
+      "paper": "SandboxAgent: Benchmark Execution",
+      "venue": "ACN Harness Architecture"
+    },
+    "AGENT-STATE": {
+      "file": "src/agents/conscious_agent.py",
+      "paper": "Conscious Agent: Lifecycle States",
+      "venue": "ACN Architecture Document"
+    },
+    "AGENT-GOAL": {
+      "file": "src/agents/conscious_agent.py",
+      "paper": "Conscious Agent: Goal Representation",
+      "venue": "ACN Architecture Document"
+    },
+    "CONSCIOUS-AGENT": {
+      "file": "src/agents/conscious_agent.py",
+      "paper": "Conscious Agent: Fractal Self-Awareness in Agent Swarms",
+      "venue": "ACN Harness Architecture"
+    },
+    "AGENT-ACTIVATE": {
+      "file": "src/agents/conscious_agent.py",
+      "paper": "Conscious Agent: Activation Protocol",
+      "venue": "ACN Harness Architecture"
+    },
+    "AGENT-THINK": {
+      "file": "src/agents/conscious_agent.py",
+      "paper": "Conscious Agent: Reasoning Loop",
+      "venue": "ACN Harness Architecture"
+    },
+    "AGENT-RESEARCH": {
+      "file": "src/agents/conscious_agent.py",
+      "paper": "Conscious Agent: Research Execution",
+      "venue": "ACN Harness Architecture"
+    },
+    "AGENT-COMMUNICATE": {
+      "file": "src/agents/conscious_agent.py",
+      "paper": "Conscious Agent: Inter-Agent Communication",
+      "venue": "ACN Harness Architecture"
+    },
+    "AGENT-RECEIVE": {
+      "file": "src/agents/conscious_agent.py",
+      "paper": "Conscious Agent: Message Reception",
+      "venue": "ACN Architecture Document"
+    },
+    "AGENT-REPORT": {
+      "file": "src/agents/conscious_agent.py",
+      "paper": "Conscious Agent: Self-Reporting",
+      "venue": "ACN Harness Architecture"
+    },
+    "AGENT-PEER": {
+      "file": "src/agents/conscious_agent.py",
+      "paper": "Conscious Agent: Peer Registration",
+      "venue": "ACN Architecture Document"
+    },
+    "AGENT-GRAPH-MEMORY": {
+      "file": "src/agents/conscious_agent.py",
+      "paper": "Conscious Agent: Graph Memory Integration",
+      "venue": "ACN Architecture Document"
+    },
+    "AGENT-EXPERIENCE": {
+      "file": "src/agents/conscious_agent.py",
+      "paper": "Conscious Agent: Experience Recording",
+      "venue": "ACN Harness Architecture"
+    },
+    "AGENT-REFLECT": {
+      "file": "src/agents/conscious_agent.py",
+      "paper": "Conscious Agent: Meta-Cognitive Reflection",
+      "venue": "ACN Harness Architecture"
+    },
+    "AGENT-POLICY-UPDATE": {
+      "file": "src/agents/conscious_agent.py",
+      "paper": "Conscious Agent: Policy Optimization",
+      "venue": "ACN Harness Architecture"
+    },
+    "AGENT-SKILL-EVOLVE": {
+      "file": "src/agents/conscious_agent.py",
+      "paper": "Conscious Agent: Skill Evolution",
+      "venue": "ACN Harness Architecture"
+    },
+    "AGENT-GET-POLICY": {
+      "file": "src/agents/conscious_agent.py",
+      "paper": "Conscious Agent: Policy Access",
+      "venue": "ACN Harness Architecture"
+    },
+    "AGENT-PERCEIVE": {
+      "file": "src/agents/conscious_agent.py",
+      "paper": "Conscious Agent: Multi-Modal Perception",
+      "venue": "ACN Harness Architecture"
+    },
+    "AGENT-FUSE": {
+      "file": "src/agents/conscious_agent.py",
+      "paper": "Conscious Agent: Cross-Modal Fusion",
+      "venue": "ACN Harness Architecture"
+    },
+    "AGENT-GROUND": {
+      "file": "src/agents/conscious_agent.py",
+      "paper": "Conscious Agent: Temporal Grounding",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-AGENT": {
+      "file": "src/agents/twin_agent.py",
+      "paper": "Twin Agent: Conscious Agent with Loaded Cognitive Identity",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-AGENT-THINK": {
+      "file": "src/agents/twin_agent.py",
+      "paper": "Twin Agent: Twin-Guided Reasoning Loop",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-AGENT-CRITIQUE": {
+      "file": "src/agents/twin_agent.py",
+      "paper": "Twin Agent: Cross-Twin Critique",
+      "venue": "ACN Harness Architecture"
+    },
+    "DELIB-VOTE": {
+      "file": "src/agents/deliberation.py",
+      "paper": "Deliberation Engine: Quadratic Voting for Multi-Agent Consensus",
+      "venue": "ACN Harness Architecture"
+    },
+    "DELIB-PROPOSAL": {
+      "file": "src/agents/deliberation.py",
+      "paper": "Deliberation Engine: Structured Proposal with Argument Map",
+      "venue": "ACN Harness Architecture"
+    },
+    "DELIB-ARGUMENT": {
+      "file": "src/agents/deliberation.py",
+      "paper": "Deliberation Engine: Argument Map with Cognitive Closure Detection",
+      "venue": "ACN Harness Architecture"
+    },
+    "DELIB-ENGINE": {
+      "file": "src/agents/deliberation.py",
+      "paper": "Deliberation Engine: Weighted Consensus + Recursive Deliberation + Argument Persistence",
+      "venue": "ACN Harness Architecture"
+    },
+    "DELIB-WEIGHTED-VOTE": {
+      "file": "src/agents/deliberation.py",
+      "paper": "Deliberation Engine: Quadratic Voting with Reputation Weighting",
+      "venue": "ACN Harness Architecture"
+    },
+    "DELIB-RECURSIVE": {
+      "file": "src/agents/deliberation.py",
+      "paper": "Deliberation Engine: Recursive Deliberation with Semantic Decay",
+      "venue": "ACN Harness Architecture"
+    },
+    "DELIB-ARGUMENT-MAP": {
+      "file": "src/agents/deliberation.py",
+      "paper": "Deliberation Engine: Argument Persistence and Closure Detection",
+      "venue": "ACN Harness Architecture"
+    },
+    "SKILL-DEF": {
+      "file": "src/agents/cognitive_skill.py",
+      "paper": "CognitiveSkill: Capability Module Definition",
+      "venue": "ACN Architecture Document"
+    },
+    "SKILL-REGISTRY": {
+      "file": "src/agents/cognitive_skill.py",
+      "paper": "CognitiveSkill: Citation-Governed Capability Modules",
+      "venue": "ACN Harness Architecture"
+    },
+    "SKILL-REGISTER": {
+      "file": "src/agents/cognitive_skill.py",
+      "paper": "CognitiveSkill: Skill Registration",
+      "venue": "ACN Architecture Document"
+    },
+    "SKILL-LOAD": {
+      "file": "src/agents/cognitive_skill.py",
+      "paper": "CognitiveSkill: Skill Loading",
+      "venue": "ACN Architecture Document"
+    },
+    "SKILL-COMPOSE": {
+      "file": "src/agents/cognitive_skill.py",
+      "paper": "CognitiveSkill: Composition",
+      "venue": "ACN Architecture Document"
+    },
+    "SKILL-LIST": {
+      "file": "src/agents/cognitive_skill.py",
+      "paper": "CognitiveSkill: Registry Operations",
+      "venue": "ACN Architecture Document"
+    },
+    "SKILL-GET": {
+      "file": "src/agents/cognitive_skill.py",
+      "paper": "CognitiveSkill: Registry Operations",
+      "venue": "ACN Architecture Document"
+    },
+    "SKILL-PERSIST": {
+      "file": "src/agents/cognitive_skill.py",
+      "paper": "CognitiveSkill: Persistence",
+      "venue": "ACN Architecture Document"
+    },
+    "SKILL-LOAD-DISK": {
+      "file": "src/agents/cognitive_skill.py",
+      "paper": "CognitiveSkill: Persistence",
+      "venue": "ACN Architecture Document"
+    },
+    "UTIL-SNAKE": {
+      "file": "src/twins/generator.py",
+      "paper": "ACN Utility: String Conversion",
+      "venue": "ACN Architecture Document"
+    },
+    "UTIL-PASCAL": {
+      "file": "src/twins/generator.py",
+      "paper": "ACN Utility: String Conversion",
+      "venue": "ACN Architecture Document"
+    },
+    "TWIN-GENERATOR": {
+      "file": "src/twins/generator.py",
+      "paper": "Cognitive Twin Generator: Schema-Driven Batch Transformation",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-BATCH": {
+      "file": "src/twins/generator.py",
+      "paper": "Cognitive Twin Generator: Batch Processing Pipeline",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-GENERATE": {
+      "file": "src/twins/generator.py",
+      "paper": "Cognitive Twin Generator: Profile-to-Twin Transformation",
+      "venue": "ACN Harness Architecture"
+    },
+    "COGNITIVE-TWIN-ABC": {
+      "file": "src/twins/base.py",
+      "paper": "Cognitive Twin: Abstract Base Class for Polymorphic Reasoning",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-JENNY-ZHANG": {
+      "file": "src/twins/cognitive_models/jenny_zhang.py",
+      "paper": "Cognitive Twin Schema: Jenny Zhang",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-ACTIVATE": {
+      "file": "src/twins/cognitive_models/aman_madaan.py",
+      "paper": "Cognitive Twin Activation Protocol",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-SIGNATURE": {
+      "file": "src/twins/cognitive_models/aman_madaan.py",
+      "paper": "Cognitive Twin Schema: Introspection API",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-RANJAY-KRISHNA": {
+      "file": "src/twins/cognitive_models/ranjay_krishna.py",
+      "paper": "Cognitive Twin Schema: Ranjay Krishna",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-SAEID-JAMSHIDI": {
+      "file": "src/twins/cognitive_models/saeid_jamshidi.py",
+      "paper": "Cognitive Twin Schema: Saeid Jamshidi",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-LI-FEI-FEI": {
+      "file": "src/twins/cognitive_models/li_fei_fei.py",
+      "paper": "Cognitive Twin Schema: Li Fei-Fei",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-OPENAI-AGENTS-SDK-TEAM": {
+      "file": "src/twins/cognitive_models/openai_agents_sdk_team.py",
+      "paper": "Cognitive Twin Schema: OpenAI Agents SDK Team",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-XIANGHUI-XIE": {
+      "file": "src/twins/cognitive_models/xianghui_xie.py",
+      "paper": "Cognitive Twin Schema: Xianghui Xie",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-JACOB-CHALK": {
+      "file": "src/twins/cognitive_models/jacob_chalk.py",
+      "paper": "Cognitive Twin Schema: Jacob Chalk",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-JIANKANG-WANG": {
+      "file": "src/twins/cognitive_models/jiankang_wang.py",
+      "paper": "Cognitive Twin Schema: Jiankang Wang",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-ROHITH-PEDDI": {
+      "file": "src/twins/cognitive_models/rohith_peddi.py",
+      "paper": "Cognitive Twin Schema: Rohith Peddi",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-JUAN-CARLOS-NIEBLES": {
+      "file": "src/twins/cognitive_models/juan_carlos_niebles.py",
+      "paper": "Cognitive Twin Schema: Juan Carlos Niebles",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-ANTHROPIC-CLAUDE-CODE-/-AGENT-SDK-TEAM": {
+      "file": "src/twins/cognitive_models/anthropic_claude_code_agent_sdk_team.py",
+      "paper": "Cognitive Twin Schema: Anthropic Claude Code / Agent SDK Team",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-DAPR-AGENTS-TEAM": {
+      "file": "src/twins/cognitive_models/dapr_agents_team.py",
+      "paper": "Cognitive Twin Schema: Dapr Agents Team",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-MACIEJ-BESTA": {
+      "file": "src/twins/cognitive_models/maciej_besta.py",
+      "paper": "Cognitive Twin Schema: Maciej Besta",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-IVAN-MARISCA": {
+      "file": "src/twins/cognitive_models/ivan_marisca.py",
+      "paper": "Cognitive Twin Schema: Ivan Marisca",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-ANDREA-CINI": {
+      "file": "src/twins/cognitive_models/andrea_cini.py",
+      "paper": "Cognitive Twin Schema: Andrea Cini",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-MIAO-YU-ET-AL.": {
+      "file": "src/twins/cognitive_models/miao_yu_et_al.py",
+      "paper": "Cognitive Twin Schema: Miao Yu et al.",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-NOAH-SHINN": {
+      "file": "src/twins/cognitive_models/noah_shinn.py",
+      "paper": "Cognitive Twin Schema: Noah Shinn",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-SHUNYU-YAO": {
+      "file": "src/twins/cognitive_models/shunyu_yao.py",
+      "paper": "Cognitive Twin Schema: Shunyu Yao",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-EVAN-HUBINGER": {
+      "file": "src/twins/cognitive_models/evan_hubinger.py",
+      "paper": "Cognitive Twin Schema: Evan Hubinger",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-FR\u00c9D\u00c9RIC-BERDOZ-&-ROGER-WATTENHOFER": {
+      "file": "src/twins/cognitive_models/fr\u00e9d\u00e9ric_berdoz_roger_wattenhofer.py",
+      "paper": "Cognitive Twin Schema: Fr\u00e9d\u00e9ric Berdoz & Roger Wattenhofer",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-JIEBO-LUO": {
+      "file": "src/twins/cognitive_models/jiebo_luo.py",
+      "paper": "Cognitive Twin Schema: Jiebo Luo",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-YONGRAE-JO-&-CHANIK-PARK": {
+      "file": "src/twins/cognitive_models/yongrae_jo_chanik_park.py",
+      "paper": "Cognitive Twin Schema: Yongrae Jo & Chanik Park",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-GOOGLE-ADK-/-A2A-TEAM": {
+      "file": "src/twins/cognitive_models/google_adk_a2a_team.py",
+      "paper": "Cognitive Twin Schema: Google ADK / A2A Team",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-XINHAO-LI": {
+      "file": "src/twins/cognitive_models/xinhao_li.py",
+      "paper": "Cognitive Twin Schema: Xinhao Li",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-RUYI-XU": {
+      "file": "src/twins/cognitive_models/ruyi_xu.py",
+      "paper": "Cognitive Twin Schema: Ruyi Xu",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-CONOR-HEINS": {
+      "file": "src/twins/cognitive_models/conor_heins.py",
+      "paper": "Cognitive Twin Schema: Conor Heins",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-SHILONG-WANG-&-GUIBIN-ZHANG": {
+      "file": "src/twins/cognitive_models/shilong_wang_guibin_zhang.py",
+      "paper": "Cognitive Twin Schema: Shilong Wang & Guibin Zhang",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-CHENLIANG-XU": {
+      "file": "src/twins/cognitive_models/chenliang_xu.py",
+      "paper": "Cognitive Twin Schema: Chenliang Xu",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-RYAN-GREENBLATT": {
+      "file": "src/twins/cognitive_models/ryan_greenblatt.py",
+      "paper": "Cognitive Twin Schema: Ryan Greenblatt",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-LIFAN-ZHENG-&-YU-TIAN": {
+      "file": "src/twins/cognitive_models/lifan_zheng_yu_tian.py",
+      "paper": "Cognitive Twin Schema: Lifan Zheng & Yu Tian",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-YU-CUI-&-HONGYANG-DU": {
+      "file": "src/twins/cognitive_models/yu_cui_hongyang_du.py",
+      "paper": "Cognitive Twin Schema: Yu Cui & Hongyang Du",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-KRISTEN-GRAUMAN": {
+      "file": "src/twins/cognitive_models/kristen_grauman.py",
+      "paper": "Cognitive Twin Schema: Kristen Grauman",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-SHENGYUAN-YE": {
+      "file": "src/twins/cognitive_models/shengyuan_ye.py",
+      "paper": "Cognitive Twin Schema: Shengyuan Ye",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-NEHZATI-M.-(MOHAMMADREZA-NEHZATI)": {
+      "file": "src/twins/cognitive_models/nehzati_m_mohammadreza_nehzati.py",
+      "paper": "Cognitive Twin Schema: Nehzati M. (Mohammadreza Nehzati)",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-JO\u00c3O-MOURA": {
+      "file": "src/twins/cognitive_models/jo\u00e3o_moura.py",
+      "paper": "Cognitive Twin Schema: Jo\u00e3o Moura",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-CHI-WANG": {
+      "file": "src/twins/cognitive_models/chi_wang.py",
+      "paper": "Cognitive Twin Schema: Chi Wang",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-TORSTEN-HOEFLER": {
+      "file": "src/twins/cognitive_models/torsten_hoefler.py",
+      "paper": "Cognitive Twin Schema: Torsten Hoefler",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-HARRISON-CHASE": {
+      "file": "src/twins/cognitive_models/harrison_chase.py",
+      "paper": "Cognitive Twin Schema: Harrison Chase",
+      "venue": "ACN Harness Architecture"
+    },
+    "TWIN-AMAN-MADAAN": {
+      "file": "src/twins/cognitive_models/aman_madaan.py",
+      "paper": "Cognitive Twin Schema: Aman Madaan",
+      "venue": "ACN Harness Architecture"
+    },
+    "CITATIONS-INTROSPECTION": {
+      "file": "src/shared/utils/citations.py",
+      "paper": "Citation Governance for Autonomous Cognitive Networks",
+      "venue": "ACN Architecture Document"
+    },
+    "CITATIONS-VERIFICATION": {
+      "file": "src/shared/utils/citations.py",
+      "paper": "Citation Governance for Autonomous Cognitive Networks",
+      "venue": "ACN Architecture Document"
+    },
+    "CITATIONS-AUDIT": {
+      "file": "src/shared/utils/citations.py",
+      "paper": "Citation Governance for Autonomous Cognitive Networks",
+      "venue": "ACN Architecture Document"
+    },
+    "VIDEO-SCENE-GRAPH": {
+      "file": "src/perception/video_scene_graph.py",
+      "paper": "Temporal Video Scene Graph for Spatio-Temporal Understanding",
+      "venue": "ACN Architecture Document"
+    },
+    "ACTION-TUBE": {
+      "file": "src/perception/action_tube.py",
+      "paper": "Action Tube: Spatio-Temporal Action Localization",
+      "venue": "ACN Architecture Document"
+    },
+    "CROSS-MODAL": {
+      "file": "src/perception/cross_modal_fusion.py",
+      "paper": "Cross-Modal Fusion with Attention Gating",
+      "venue": "ACN Architecture Document"
+    },
+    "TEMPORAL-GROUNDING": {
+      "file": "src/perception/temporal_grounding.py",
+      "paper": "Temporal Grounding for Video Event Localization",
+      "venue": "ACN Architecture Document"
+    },
+    "ARXIV-CLIENT": {
+      "file": "src/research/arxiv_client.py",
+      "paper": "arXiv API Client for ACN Research",
+      "venue": "ACN Research Architecture"
+    },
+    "WEB-RESEARCH-ENGINE": {
+      "file": "src/research/web_research_engine.py",
+      "paper": "TencentDB Agent Memory: Research-Augmented Agents",
+      "venue": "ACN Research Architecture"
+    },
+    "RESEARCH-TWIN": {
+      "file": "src/research/research_augmented_twin.py",
+      "paper": "Research-Augmented Digital Twins for Consensus",
+      "venue": "ACN Research Architecture"
+    },
+    "DATE-TOOL": {
+      "file": "src/tools/date_tool.py",
+      "paper": "ACN Tool System: Temporal Grounding for Agent Research",
+      "venue": "ACN Architecture Document"
+    },
+    "DATE-GET": {
+      "file": "src/tools/date_tool.py",
+      "paper": "ACN Tool System: Temporal Grounding",
+      "venue": "ACN Architecture Document"
+    },
+    "DATE-CONVENIENCE": {
+      "file": "src/tools/date_tool.py",
+      "paper": "ACN Tool System: Temporal Grounding",
+      "venue": "ACN Architecture Document"
+    },
+    "DATE-FORMAT": {
+      "file": "src/tools/date_tool.py",
+      "paper": "ACN Tool System: Query Enhancement",
+      "venue": "ACN Architecture Document"
+    },
+    "DATE-FRESHNESS": {
+      "file": "src/tools/date_tool.py",
+      "paper": "ACN Tool System: Freshness Filtering",
+      "venue": "ACN Architecture Document"
+    },
+    "WEB-SEARCH-RESULT": {
+      "file": "src/tools/web_search_tool.py",
+      "paper": "ACN Web Search Tool: Result Structure",
+      "venue": "ACN Architecture Document"
+    },
+    "WEB-SEARCH-TOOL": {
+      "file": "src/tools/web_search_tool.py",
+      "paper": "ACN Web Search Tool: Date-Aware Search",
+      "venue": "ACN Architecture Document"
+    },
+    "WEB-SEARCH-ONESHOT": {
+      "file": "src/tools/web_search_tool.py",
+      "paper": "ACN Web Search Tool: One-Shot Interface",
+      "venue": "ACN Architecture Document"
+    },
+    "WEB-SEARCH-GET-DATE": {
+      "file": "src/tools/web_search_tool.py",
+      "paper": "ACN Web Search Tool: Temporal Grounding Enforcement",
+      "venue": "ACN Architecture Document"
+    },
+    "WEB-SEARCH-EXECUTE": {
+      "file": "src/tools/web_search_tool.py",
+      "paper": "ACN Web Search Tool: Search Execution",
+      "venue": "ACN Architecture Document"
+    },
+    "WEB-SEARCH-NEWS": {
+      "file": "src/tools/web_search_tool.py",
+      "paper": "ACN Web Search Tool: News Search",
+      "venue": "ACN Architecture Document"
+    },
+    "WEB-SEARCH-HISTORY": {
+      "file": "src/tools/web_search_tool.py",
+      "paper": "ACN Web Search Tool: Audit Trail",
+      "venue": "ACN Architecture Document"
+    },
+    "WEB-SEARCH-CLEAR": {
+      "file": "src/tools/web_search_tool.py",
+      "paper": "ACN Web Search Tool: Audit Trail",
+      "venue": "ACN Architecture Document"
+    },
+    "TWIN-VM-STATE": {
+      "file": "src/engines/persistent_twin_engine.py",
+      "paper": "ACN Core Engine: Twin VM State Machine",
+      "venue": "ACN Architecture Document"
+    },
+    "PERSISTENT-TWIN-ENGINE": {
+      "file": "src/engines/persistent_twin_engine.py",
+      "paper": "ACN Core Engine: Persistent Twin Execution",
+      "venue": "ACN Architecture Document"
+    },
+    "OPENCOMPUTER-SUBSTRATE": {
+      "file": "src/engines/opencomputer_client.py",
+      "paper": "ACN Core Engine: OpenComputer Cloud VM Substrate",
+      "venue": "ACN Architecture Document"
+    },
+    "SWARM-VM-CLUSTER": {
+      "file": "src/engines/swarm_vm_cluster.py",
+      "paper": "ACN Core Engine: Swarm VM Cluster",
+      "venue": "ACN Architecture Document"
+    },
+    "CHECKPOINT-INFO": {
+      "file": "src/engines/checkpoint_manager.py",
+      "paper": "ACN Core Engine: Checkpoint Metadata",
+      "venue": "ACN Architecture Document"
+    },
+    "CHECKPOINT-MANAGER": {
+      "file": "src/engines/checkpoint_manager.py",
+      "paper": "ACN Core Engine: Checkpoint Management",
+      "venue": "ACN Architecture Document"
+    },
+    "DASHBOARD-COLLECTOR": {
+      "file": "src/dashboard/data_collector.py",
+      "paper": "ACN Dashboard: Real-Time Layered Memory Observability",
+      "venue": "ACN Architecture Document"
+    },
+    "FEEDBACK-LOOP": {
+      "file": "src/harness/feedback_loop.py",
+      "paper": "Self-Improvement Loop for ACN Harness",
+      "venue": "ACN Harness Architecture"
+    },
+    "SKILL-EVOLUTION": {
+      "file": "src/harness/skill_evolution.py",
+      "paper": "Skill Evolution Engine for Conscious Agents",
+      "venue": "ACN Harness Architecture"
+    },
+    "AWARENESS-LEVEL": {
+      "file": "src/harness/awareness.py",
+      "paper": "Meta-Cognitive Harness: Awareness Subsystem",
+      "venue": "ACN Architecture Document"
+    },
+    "AWARENESS-ALERT": {
+      "file": "src/harness/awareness.py",
+      "paper": "Meta-Cognitive Harness: Awareness Subsystem",
+      "venue": "ACN Architecture Document"
+    },
+    "AWARENESS-CORE": {
+      "file": "src/harness/awareness.py",
+      "paper": "Meta-Cognitive Harness: Awareness Subsystem",
+      "venue": "ACN Architecture Document"
+    },
+    "AWARENESS-GOAL": {
+      "file": "src/harness/awareness.py",
+      "paper": "Meta-Cognitive Harness: Awareness Subsystem",
+      "venue": "ACN Architecture Document"
+    },
+    "AWARENESS-STATE": {
+      "file": "src/harness/awareness.py",
+      "paper": "Meta-Cognitive Harness: Awareness Subsystem",
+      "venue": "ACN Architecture Document"
+    },
+    "AWARENESS-DIRECTION": {
+      "file": "src/harness/awareness.py",
+      "paper": "Meta-Cognitive Harness: Awareness Subsystem",
+      "venue": "ACN Architecture Document"
+    },
+    "AWARENESS-HANDLER": {
+      "file": "src/harness/awareness.py",
+      "paper": "Meta-Cognitive Harness: Awareness Subsystem",
+      "venue": "ACN Architecture Document"
+    },
+    "AWARENESS-REPORT": {
+      "file": "src/harness/awareness.py",
+      "paper": "Meta-Cognitive Harness: Awareness Subsystem",
+      "venue": "ACN Architecture Document"
+    },
+    "AI-DIRECTOR": {
+      "file": "src/harness/ai_director.py",
+      "paper": "AI Director for Autonomous Cognitive Networks",
+      "venue": "ACN Harness Architecture"
+    },
+    "AI-DIRECT-DIRECT": {
+      "file": "src/harness/ai_director.py",
+      "paper": "AI Director: Direction Generation",
+      "venue": "ACN Harness Architecture"
+    },
+    "CODE-GEN-PROTOCOL": {
+      "file": "src/harness/code_generator.py",
+      "paper": "Autonomous Executor: Code Generation Protocol",
+      "venue": "ACN Harness Architecture"
+    },
+    "CODE-GEN-TEMPLATE": {
+      "file": "src/harness/code_generator.py",
+      "paper": "Autonomous Executor: Template-Based Code Generation",
+      "venue": "ACN Harness Architecture"
+    },
+    "CODE-GEN-LLM": {
+      "file": "src/harness/code_generator.py",
+      "paper": "Autonomous Executor: LLM-Based Code Generation",
+      "venue": "ACN Harness Architecture"
+    },
+    "CODE-GEN-FALLBACK": {
+      "file": "src/harness/code_generator.py",
+      "paper": "Autonomous Executor: Fallback Code Generation",
+      "venue": "ACN Harness Architecture"
+    },
+    "POLICY-OPTIMIZER": {
+      "file": "src/harness/policy_optimizer.py",
+      "paper": "Policy Optimizer for Conscious Agents",
+      "venue": "ACN Harness Architecture"
+    },
+    "AUTO-REPORT": {
+      "file": "src/harness/autonomous_executor.py",
+      "paper": "Autonomous Executor: Self-Evaluation Report",
+      "venue": "ACN Harness Architecture"
+    },
+    "AUTO-EXEC": {
+      "file": "src/harness/autonomous_executor.py",
+      "paper": "Autonomous Executor: Task Graph Execution",
+      "venue": "ACN Harness Architecture"
+    },
+    "AUTO-EXEC-SUBTASK": {
+      "file": "src/harness/autonomous_executor.py",
+      "paper": "Autonomous Executor: Sub-Task Execution",
+      "venue": "ACN Harness Architecture"
+    },
+    "AUTO-EXEC-GRAPH": {
+      "file": "src/harness/autonomous_executor.py",
+      "paper": "Autonomous Executor: Full Task Graph Execution",
+      "venue": "ACN Harness Architecture"
+    },
+    "AUTO-CODEGEN": {
+      "file": "src/harness/autonomous_executor.py",
+      "paper": "Autonomous Executor: Code Generation",
+      "venue": "ACN Harness Architecture"
+    },
+    "AUTO-EVAL": {
+      "file": "src/harness/autonomous_executor.py",
+      "paper": "Autonomous Executor: Test Execution",
+      "venue": "ACN Harness Architecture"
+    },
+    "AUTO-DEPLOY": {
+      "file": "src/harness/autonomous_executor.py",
+      "paper": "Autonomous Executor: Artifact Deployment",
+      "venue": "ACN Harness Architecture"
+    },
+    "AUTO-MONITOR": {
+      "file": "src/harness/autonomous_executor.py",
+      "paper": "Autonomous Executor: Execution Monitoring",
+      "venue": "ACN Harness Architecture"
+    },
+    "POST-COND-IFACE": {
+      "file": "src/harness/post_conditions.py",
+      "paper": "Strands AI Functions: Post-Condition Validation",
+      "venue": "ACN Harness Architecture"
+    },
+    "POST-COND-VALIDATOR": {
+      "file": "src/harness/post_conditions.py",
+      "paper": "Strands AI Functions: Self-Correcting Validation",
+      "venue": "ACN Harness Architecture"
+    },
+    "META-REFLECTION": {
+      "file": "src/harness/meta_cognitive_reflection.py",
+      "paper": "Meta-Cognitive Reflection Engine",
+      "venue": "ACN Harness Architecture"
+    },
+    "EXPERIENCE-BUFFER": {
+      "file": "src/harness/experience_buffer.py",
+      "paper": "Experience Buffer for Meta-Cognitive Learning",
+      "venue": "ACN Harness Architecture"
+    },
+    "TASK-TYPE": {
+      "file": "src/harness/task_decomposer.py",
+      "paper": "Task Decomposer: Intent Classification",
+      "venue": "ACN Architecture Document"
+    },
+    "SUBTASK-DEF": {
+      "file": "src/harness/task_decomposer.py",
+      "paper": "Task Decomposer: Sub-Task Representation",
+      "venue": "ACN Architecture Document"
+    },
+    "TASK-GRAPH": {
+      "file": "src/harness/task_decomposer.py",
+      "paper": "Task Decomposer: Dependency Graph",
+      "venue": "ACN Architecture Document"
+    },
+    "TASK-DECOMPOSER": {
+      "file": "src/harness/task_decomposer.py",
+      "paper": "Task Decomposer: Harness Layer 1",
+      "venue": "ACN Architecture Document"
+    },
+    "TASK-READY": {
+      "file": "src/harness/task_decomposer.py",
+      "paper": "Task Decomposer: Ready Task Detection",
+      "venue": "ACN Architecture Document"
+    },
+    "TASK-CRITICAL": {
+      "file": "src/harness/task_decomposer.py",
+      "paper": "Task Decomposer: Critical Path Analysis",
+      "venue": "ACN Architecture Document"
+    },
+    "TASK-SERIALIZE": {
+      "file": "src/harness/task_decomposer.py",
+      "paper": "Task Decomposer: Graph Serialization",
+      "venue": "ACN Architecture Document"
+    },
+    "TASK-INTENT": {
+      "file": "src/harness/task_decomposer.py",
+      "paper": "Task Decomposer: Intent Parser",
+      "venue": "ACN Architecture Document"
+    },
+    "TASK-DECOMPOSE": {
+      "file": "src/harness/task_decomposer.py",
+      "paper": "Task Decomposer: Sub-Task Generation",
+      "venue": "ACN Architecture Document"
+    },
+    "TASK-REVISION": {
+      "file": "src/harness/task_decomposer.py",
+      "paper": "Task Decomposer: Self-Revision Loop",
+      "venue": "ACN Architecture Document"
+    },
+    "TASK-HISTORY": {
+      "file": "src/harness/task_decomposer.py",
+      "paper": "Task Decomposer: Decomposition History",
+      "venue": "ACN Architecture Document"
+    }
+  },
+  "unknown": {}
+}

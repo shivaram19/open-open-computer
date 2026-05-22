@@ -1,0 +1,146 @@
+name: Security Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    # Run weekly on Sundays at 3 AM UTC
+    - cron: "0 3 * * 0"
+
+permissions:
+  contents: read
+
+jobs:
+  # ── Job 1: Secret Scanning ──────────────────────────────────────────
+  secrets:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Run GitLeaks
+        uses: gitleaks/gitleaks-action@83373cf2f8c4d6fdc41193f086d18f8473e66f95 # v2.3.7
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITLEAKS_CONFIG: acn/.gitleaks.toml
+
+      - name: Run TruffleHog
+        uses: trufflesecurity/trufflehog@e3cd824808f3f70c0bdd061b5fe2042c3c069f72 # v3.88.0
+        with:
+          path: ./
+          base: main
+          head: HEAD
+          extra_args: --only-verified
+
+  # ── Job 2: Dependency Scanning ──────────────────────────────────────
+  dependencies:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@8d9ed9ac5c53483de85588cdf95a591a75ab9f55 # v5.5.0
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pip-audit safety
+
+      - name: Run pip-audit
+        run: |
+          cd acn
+          pip-audit --requirement requirements-acn.txt --format=json --output=pip-audit-results.json || true
+
+      - name: Run Safety CLI
+        run: |
+          cd acn
+          safety check --file requirements-acn.txt || true
+
+      - name: Upload pip-audit results
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: pip-audit-results
+          path: acn/pip-audit-results.json
+          retention-days: 30
+
+  # ── Job 3: Workflow Security (Zizmor) ──────────────────────────────
+  workflow-security:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+
+      - name: Run Zizmor
+        run: |
+          pip install zizmor
+          zizmor --format sarif .github/workflows/ > zizmor-results.sarif || true
+
+      - name: Upload Zizmor SARIF
+        uses: github/codeql-action/upload-sarif@1b549b9259bda1cb5ddde3b41741f82c5d1ca404 # v3.28.13
+        with:
+          sarif_file: zizmor-results.sarif
+          category: zizmor
+
+  # ── Job 4: Container Scanning ───────────────────────────────────────
+  container-scan:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+
+      - name: Scan base image with OSV Scanner
+        run: osv-scanner scan image python:3.11-alpine
+        with:
+          scan-args: |-
+            --recursive
+            image
+            python:3.11-alpine
+
+  # ── Job 5: OpenSSF Scorecard ────────────────────────────────────────
+  scorecard:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+      id-token: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+
+      - name: Run Scorecard
+        uses: ossf/scorecard-action@f49ababe35f15f94d2c2b4b2bfb590f5b53488c7 # v2.4.1
+        with:
+          results_file: scorecard-results.sarif
+          results_format: sarif
+          publish_results: true
+
+      - name: Upload Scorecard SARIF
+        uses: github/codeql-action/upload-sarif@1b549b9259bda1cb5ddde3b41741f82c5d1ca404 # v3.28.13
+        with:
+          sarif_file: scorecard-results.sarif
+          category: scorecard

@@ -1,0 +1,53 @@
+# Pre-commit hooks for ACN
+# Install: pip install pre-commit && pre-commit install
+# Run all: pre-commit run --all-files
+
+repos:
+  # Basic file checks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-json
+      - id: check-toml
+      - id: check-merge-conflict
+      - id: detect-private-key
+      - id: check-added-large-files
+        args: ["--maxkb=1000"]
+
+  # Secret scanning — GitLeaks
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.25.1
+    hooks:
+      - id: gitleaks
+        args: ["--config", "acn/.gitleaks.toml"]
+
+  # Secret scanning — TruffleHog
+  - repo: local
+    hooks:
+      - id: trufflehog
+        name: TruffleHog Secret Scanner
+        entry: trufflehog
+        language: system
+        args: ["git", "file://.", "--only-verified", "--fail"]
+        pass_filenames: false
+
+  # Python formatting — Ruff (fast, cutting-edge)
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.11.0
+    hooks:
+      - id: ruff
+        args: ["--fix", "--exit-non-zero-on-fix"]
+        files: ^acn/src/.*\.py$
+      - id: ruff-format
+        files: ^acn/src/.*\.py$
+
+  # Python type checking — mypy
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.15.0
+    hooks:
+      - id: mypy
+        additional_dependencies: [types-requests, types-PyYAML]
+        files: ^acn/src/.*\.py$
