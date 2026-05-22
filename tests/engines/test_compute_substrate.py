@@ -5,6 +5,7 @@ import pytest
 from engines.compute_substrate import (
     LocalSandboxSubstrate,
     MockVMSubstrate,
+    DockerSubstrate,
     ExecutionEnvironment,
 )
 
@@ -133,3 +134,103 @@ class TestLocalSandboxSubstrate:
         assert env.status == "running"
         assert sub.read_file(env, "/state.txt") == "saved"
         sub.destroy(env)
+
+
+class TestDockerSubstrate:
+    """Tests for DockerSubstrate using real containers.
+
+    These tests require Docker to be installed and running.
+    They create real containers and clean them up after each test.
+    """
+
+    @pytest.fixture
+    def docker_substrate(self):
+        """Yield a DockerSubstrate and ensure cleanup after the test."""
+        sub = DockerSubstrate()
+        yield sub
+        # Destroy any remaining environments
+        for env in list(sub.list_environments()):
+            sub.destroy(env)
+
+    def test_create_and_destroy(self, docker_substrate):
+        env = docker_substrate.create(template="test")
+        assert env.env_id.startswith("docker-")
+        assert env.substrate_type == "docker"
+        assert env.status == "running"
+        assert "container_id" in env.metadata
+
+        assert len(docker_substrate.list_environments()) == 1
+        docker_substrate.destroy(env)
+        assert env.status == "destroyed"
+        assert len(docker_substrate.list_environments()) == 0
+
+    def test_execute_echo(self, docker_substrate):
+        env = docker_substrate.create()
+        result = docker_substrate.execute(env, "echo hello docker")
+        assert result["stdout"].strip() == "hello docker"
+        assert result["return_code"] == 0
+        docker_substrate.destroy(env)
+
+    def test_execute_with_error(self, docker_substrate):
+        env = docker_substrate.create()
+        result = docker_substrate.execute(env, "exit 42")
+        assert result["return_code"] == 42
+        docker_substrate.destroy(env)
+
+    def test_file_io(self, docker_substrate):
+        env = docker_substrate.create()
+        docker_substrate.write_file(env, "/tmp/test.txt", "docker content")
+        content = docker_substrate.read_file(env, "/tmp/test.txt")
+        assert content == "docker content"
+        docker_substrate.destroy(env)
+
+    def test_read_missing_file(self, docker_substrate):
+        env = docker_substrate.create()
+        with pytest.raises(FileNotFoundError):
+            docker_substrate.read_file(env, "/tmp/nonexistent.txt")
+        docker_substrate.destroy(env)
+
+    def test_checkpoint_and_restore(self, docker_substrate):
+        env = docker_substrate.create()
+        docker_substrate.write_file(env, "/tmp/data.txt", "v1")
+
+        cp_id = docker_substrate.checkpoint(env)
+        assert cp_id is not None
+        assert env.checkpoint_count == 1
+
+        docker_substrate.write_file(env, "/tmp/data.txt", "v2")
+        assert docker_substrate.read_file(env, "/tmp/data.txt") == "v2"
+
+        assert docker_substrate.restore(env, cp_id) is True
+        # After restore the container is new; re-read file
+        assert docker_substrate.read_file(env, "/tmp/data.txt") == "v1"
+        docker_substrate.destroy(env)
+
+    def test_hibernate_and_wake(self, docker_substrate):
+        env = docker_substrate.create()
+        docker_substrate.write_file(env, "/tmp/state.txt", "saved")
+
+        assert docker_substrate.hibernate(env) is True
+        assert env.status == "hibernated"
+
+        assert docker_substrate.wake(env) is True
+        assert env.status == "running"
+        assert docker_substrate.read_file(env, "/tmp/state.txt") == "saved"
+        docker_substrate.destroy(env)
+
+    def test_multiple_environments_isolated(self, docker_substrate):
+        env1 = docker_substrate.create()
+        env2 = docker_substrate.create()
+        docker_substrate.write_file(env1, "/tmp/file.txt", "A")
+        docker_substrate.write_file(env2, "/tmp/file.txt", "B")
+        assert docker_substrate.read_file(env1, "/tmp/file.txt") == "A"
+        assert docker_substrate.read_file(env2, "/tmp/file.txt") == "B"
+        docker_substrate.destroy(env1)
+        docker_substrate.destroy(env2)
+
+    def test_timeout(self, docker_substrate):
+        env = docker_substrate.create()
+        result = docker_substrate.execute(env, "sleep 10", timeout=1)
+        assert result["return_code"] == -1
+        assert "Timeout" in result["stderr"]
+        docker_substrate.destroy(env)
