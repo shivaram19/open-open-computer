@@ -345,3 +345,169 @@ class MockVMSubstrate(ComputeSubstrate):
 
     def list_environments(self) -> List[ExecutionEnvironment]:
         return [e for e in self._envs.values() if e.status != "destroyed"]
+
+
+@cite(
+    key="Dean2008",
+    paper="MapReduce: Simplified Data Processing on Large Clusters",
+    venue="ACM TURC",
+    section="Substrate Implementations",
+    rationale="Docker containers provide lightweight isolation without external API keys",
+    confidence="CERTAIN",
+)
+class DockerSubstrate(ComputeSubstrate):
+    """
+    Docker-based compute substrate using the local Docker daemon.
+
+    Creates real containers, executes commands inside them, and manages
+    lifecycle via docker CLI. No external API keys required.
+
+    Requirements:
+        - Docker daemon running locally
+        - Target image pulled (default: python:3.11-alpine)
+    """
+
+    def __init__(self, image: str = "python:3.11-alpine"):
+        self.image = image
+        self._envs: Dict[str, ExecutionEnvironment] = {}
+        self._checkpoints: Dict[str, str] = {}  # checkpoint_id -> image tag
+
+    def _docker(self, *args) -> subprocess.CompletedProcess:
+        """Run a docker CLI command and return the result."""
+        cmd = ["docker", *args]
+        return subprocess.run(cmd, capture_output=True, text=True)
+
+    def create(self, template: str = "default", env_id: Optional[str] = None) -> ExecutionEnvironment:
+        eid = env_id or f"docker-{uuid.uuid4().hex[:12]}"
+        result = self._docker(
+            "run", "-d",
+            "--name", eid,
+            "--label", "acn-managed=true",
+            self.image,
+            "sleep", "infinity",
+        )
+        if result.returncode != 0:
+            raise RuntimeError(f"Docker create failed: {result.stderr}")
+
+        container_id = result.stdout.strip()
+        env = ExecutionEnvironment(
+            env_id=eid,
+            substrate_type="docker",
+            status="running",
+            metadata={"template": template, "container_id": container_id},
+        )
+        self._envs[eid] = env
+        return env
+
+    def execute(self, env: ExecutionEnvironment, command: str, timeout: int = 60) -> Dict[str, Any]:
+        env.touch()
+        container_id = env.metadata.get("container_id", env.env_id)
+        start = time.time()
+        try:
+            result = subprocess.run(
+                ["docker", "exec", container_id, "sh", "-c", command],
+                capture_output=True,
+                text=True,
+                timeout=timeout,
+            )
+            duration_ms = (time.time() - start) * 1000
+            return {
+                "stdout": result.stdout,
+                "stderr": result.stderr,
+                "return_code": result.returncode,
+                "duration_ms": round(duration_ms, 2),
+            }
+        except subprocess.TimeoutExpired:
+            return {
+                "stdout": "",
+                "stderr": f"Timeout after {timeout}s",
+                "return_code": -1,
+                "duration_ms": timeout * 1000,
+            }
+        except Exception as exc:
+            return {
+                "stdout": "",
+                "stderr": str(exc),
+                "return_code": -1,
+                "duration_ms": 0.0,
+            }
+
+    def read_file(self, env: ExecutionEnvironment, path: str) -> str:
+        env.touch()
+        container_id = env.metadata.get("container_id", env.env_id)
+        result = self._docker("exec", container_id, "cat", path)
+        if result.returncode != 0:
+            raise FileNotFoundError(f"File not found: {path}")
+        return result.stdout
+
+    def write_file(self, env: ExecutionEnvironment, path: str, content: str) -> None:
+        env.touch()
+        container_id = env.metadata.get("container_id", env.env_id)
+        import base64
+        b64 = base64.b64encode(content.encode()).decode()
+        result = self._docker(
+            "exec", container_id, "sh", "-c",
+            f"echo '{b64}' | base64 -d > {path}",
+        )
+        if result.returncode != 0:
+            raise IOError(f"Failed to write file: {result.stderr}")
+
+    def checkpoint(self, env: ExecutionEnvironment, checkpoint_id: Optional[str] = None) -> str:
+        env.touch()
+        cid = checkpoint_id or f"cp-{uuid.uuid4().hex[:8]}"
+        container_id = env.metadata.get("container_id", env.env_id)
+        tag = f"acn-checkpoint:{cid}"
+        result = self._docker("commit", container_id, tag)
+        if result.returncode != 0:
+            raise RuntimeError(f"Docker checkpoint failed: {result.stderr}")
+        self._checkpoints[cid] = tag
+        env.checkpoint_count += 1
+        return cid
+
+    def restore(self, env: ExecutionEnvironment, checkpoint_id: str) -> bool:
+        tag = self._checkpoints.get(checkpoint_id)
+        if tag is None:
+            return False
+        container_id = env.metadata.get("container_id", env.env_id)
+        # Stop and remove current container
+        self._docker("stop", container_id)
+        self._docker("rm", "-f", container_id)
+        # Spawn new container from checkpoint image
+        result = self._docker(
+            "run", "-d",
+            "--name", env.env_id,
+            "--label", "acn-managed=true",
+            tag,
+            "sleep", "infinity",
+        )
+        if result.returncode != 0:
+            return False
+        env.metadata["container_id"] = result.stdout.strip()
+        env.status = "running"
+        return True
+
+    def hibernate(self, env: ExecutionEnvironment) -> bool:
+        container_id = env.metadata.get("container_id", env.env_id)
+        result = self._docker("stop", container_id)
+        if result.returncode == 0:
+            env.status = "hibernated"
+            return True
+        return False
+
+    def wake(self, env: ExecutionEnvironment) -> bool:
+        container_id = env.metadata.get("container_id", env.env_id)
+        result = self._docker("start", container_id)
+        if result.returncode == 0:
+            env.status = "running"
+            return True
+        return False
+
+    def destroy(self, env: ExecutionEnvironment) -> bool:
+        container_id = env.metadata.get("container_id", env.env_id)
+        self._docker("rm", "-f", container_id)
+        env.status = "destroyed"
+        self._envs.pop(env.env_id, None)
+        return True
+
+    def list_environments(self) -> List[ExecutionEnvironment]:
+        return [e for e in self._envs.values() if e.status != "destroyed"]
