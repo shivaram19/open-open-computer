@@ -113,11 +113,6 @@ jobs:
 
       - name: Scan base image with OSV Scanner
         run: osv-scanner scan image python:3.11-alpine
-        with:
-          scan-args: |-
-            --recursive
-            image
-            python:3.11-alpine
 
   # ── Job 5: OpenSSF Scorecard ────────────────────────────────────────
   scorecard:
