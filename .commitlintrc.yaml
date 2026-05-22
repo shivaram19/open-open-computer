@@ -1,0 +1,32 @@
+extends:
+  - '@commitlint/config-conventional'
+
+# ACN-specific scopes based on our commit history
+rules:
+  scope-enum:
+    - 2
+    - always
+    - [
+        'research',
+        'substrate',
+        'executor',
+        'cluster',
+        'dashboard',
+        'citations',
+        'memory',
+        'agents',
+        'consensus',
+        'engines',
+        'harness',
+        'twins',
+        'security',
+        'devops',
+        'ci',
+        'docs',
+        'chore',
+        'test',
+      ]
+  header-max-length:
+    - 2
+    - always
+    - 100
