@@ -1,0 +1,30 @@
+# ACN Gitleaks Configuration
+
+title = "ACN Gitleaks Config"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Academic citation keys (AuthorYYYY format)"
+regexes = [
+    'Kulkarni2014',
+    'Besta2024',
+    'Castro1999',
+    'Shinn2023',
+    'Yao2023',
+    'Guo2024',
+    'Wei2022',
+    'Schick2023',
+    'Lewis2020',
+    'Minsky1986',
+    'Russell2019',
+    'Dean2008',
+    'Zhao2023',
+    'Zhang2023',
+    'Wang2023',
+    'Kojima2022',
+]
+paths = [
+    'src/research/literature_registry.py',
+]
