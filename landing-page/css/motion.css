@@ -1,0 +1,134 @@
+/* ═══════════════════════════════════════════════════════════════
+   MOTION
+   Purposeful animations: reveals, staggers, micro-interactions
+   Principle: Motion communicates state, directs attention, 
+   reinforces personality — never decoration.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Keyframes ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.94); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideRight {
+  from { opacity: 0; transform: translateX(-24px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ── Hero Entrance Animations ── */
+.fm-fade-up {
+  opacity: 0;
+  animation: fadeUp 0.8s var(--ease-out) forwards;
+}
+
+.fm-fade-in {
+  opacity: 0;
+  animation: fadeIn 0.6s var(--ease-out) forwards;
+}
+
+.fm-scale-in {
+  opacity: 0;
+  animation: scaleIn 0.6s var(--ease-out) forwards;
+}
+
+.fm-slide-right {
+  opacity: 0;
+  animation: slideRight 0.6s var(--ease-out) forwards;
+}
+
+.fm-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Stagger delays */
+.delay-1 { animation-delay: 0.08s; }
+.delay-2 { animation-delay: 0.16s; }
+.delay-3 { animation-delay: 0.28s; }
+.delay-4 { animation-delay: 0.40s; }
+.delay-5 { animation-delay: 0.52s; }
+
+/* ── Scroll-Triggered Reveals ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children on scroll */
+.reveal-stagger .reveal-child {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.55s var(--ease-out), transform 0.55s var(--ease-out);
+}
+
+.reveal-stagger.is-visible .reveal-child:nth-child(1) { transition-delay: 0.06s; opacity: 1; transform: translateY(0); }
+.reveal-stagger.is-visible .reveal-child:nth-child(2) { transition-delay: 0.12s; opacity: 1; transform: translateY(0); }
+.reveal-stagger.is-visible .reveal-child:nth-child(3) { transition-delay: 0.18s; opacity: 1; transform: translateY(0); }
+.reveal-stagger.is-visible .reveal-child:nth-child(4) { transition-delay: 0.24s; opacity: 1; transform: translateY(0); }
+.reveal-stagger.is-visible .reveal-child:nth-child(5) { transition-delay: 0.30s; opacity: 1; transform: translateY(0); }
+.reveal-stagger.is-visible .reveal-child:nth-child(6) { transition-delay: 0.36s; opacity: 1; transform: translateY(0); }
+.reveal-stagger.is-visible .reveal-child:nth-child(7) { transition-delay: 0.42s; opacity: 1; transform: translateY(0); }
+.reveal-stagger.is-visible .reveal-child:nth-child(8) { transition-delay: 0.48s; opacity: 1; transform: translateY(0); }
+
+/* Reveal from sides */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+}
+.reveal-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+}
+.reveal-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Scale reveal */
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.96);
+  transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+}
+.reveal-scale.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ── Hero Parallax Layer ── */
+.hero__layer {
+  will-change: transform;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>How We Build Sukha — SOLID Principles, Research-First, Open Source</title>
+  <meta name="description" content="Sukha is built on five engineering principles that keep it stable, safe, and easy to improve. Single responsibility, open-closed, substitution, segregation, and dependency inversion — explained for humans.">
+  <link rel="canonical" href="https://shivaram19.github.io/open-open-computer/philosophy.html">
+  <meta property="og:title" content="How We Build Sukha — SOLID Principles for Humans">
+  <meta property="og:description" content="Sukha is built on five engineering principles that keep it stable, safe, and easy to improve. No jargon. Just plain English.">
+  <meta property="og:image" content="https://shivaram19.github.io/open-open-computer/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Sukha - AI that does not give you anxiety">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/motion.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <nav class="nav" role="navigation" aria-label="Main">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo"><span>🌿</span> Sukha</a>
+      <div class="nav__links">
+        <a href="features.html" class="nav__link">What It Does</a>
+        <a href="philosophy.html" class="nav__link" aria-current="page">How We Build</a>
+        <a href="faq.html" class="nav__link">FAQ</a>
+        <a href="https://github.com/shivaram19/open-open-computer" class="nav__link" target="_blank" rel="noopener noreferrer">GitHub →</a>
+      </div>
+      <button class="nav__menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobile-menu">
+      <div class="container">
+        <a href="features.html" class="nav__mobile-link">What It Does</a>
+        <a href="philosophy.html" class="nav__mobile-link" aria-current="page">How We Build</a>
+        <a href="faq.html" class="nav__mobile-link">FAQ</a>
+        <a href="https://github.com/shivaram19/open-open-computer" class="nav__mobile-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <header class="section section--compact section--hero">
+      <div class="container">
+        <h1 class="display-heading">
+          Built to last,<br><em>not to break.</em>
+        </h1>
+        <p class="lead max-w-prose-lg">
+          Most software is duct tape and hope. When something breaks, everything breaks.
+          We built Sukha using five principles that keep it stable, safe, and easy to improve —
+          even years from now.
+        </p>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="solid-heading">
+      <div class="container reveal">
+        <h2 id="solid-heading" class="section-heading mb-6">
+          Five principles, zero jargon
+        </h2>
+
+        <div class="grid grid--1 reveal-stagger">
+          <article class="card card--border-left reveal-child">
+            <div class="icon-block">
+              <div class="card__icon" >🎯</div>
+              <div>
+                <h3 class="card__title" class="card__title card__title--large">One job per specialist</h3>
+                <p class="body-text mt-2">
+                  <strong>What it means:</strong> Every part of Sukha does exactly one thing. The memory agent only stores and retrieves. The writing agent only writes. The safety agent only checks for problems. They don't overlap. They don't interfere.
+                </p>
+                <p class="body-text mt-3">
+                  <strong>Why you care:</strong> If the video generator breaks, your memory still works. If the voice engine gets an update, your research doesn't glitch. Like a hospital where each doctor has one specialty instead of one person trying to be every specialist.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card--border-left reveal-child">
+            <div class="icon-block">
+              <div class="card__icon" >🏗️</div>
+              <div>
+                <h3 class="card__title" class="card__title card__title--large">New features don't break old ones</h3>
+                <p class="body-text mt-2">
+                  <strong>What it means:</strong> We design each part so new capabilities slot in without touching what already works. The core stays stable. Extensions plug in around it. Nothing gets rewritten just to add something new.
+                </p>
+                <p class="body-text mt-3">
+                  <strong>Why you care:</strong> When we add video generation next year, your two years of stored memories don't get corrupted. When we add a new AI model, your old workflows keep working. Like adding a new room to your house without knocking down walls.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card--border-left reveal-child">
+            <div class="icon-block">
+              <div class="card__icon" >🔌</div>
+              <div>
+                <h3 class="card__title" class="card__title card__title--large">Parts swap without breaking</h3>
+                <p class="body-text mt-2">
+                  <strong>What it means:</strong> Every component plugs into a standard socket. The memory system doesn't care which AI model you use. The voice engine doesn't care which language you speak. They're interchangeable by design.
+                </p>
+                <p class="body-text mt-3">
+                  <strong>Why you care:</strong> Don't like the default AI model? Swap it. Want a different memory system? Swap it. You're never locked in. No vendor owns your setup. Like changing the battery in your phone — standard socket, any brand.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card--border-left reveal-child">
+            <div class="icon-block">
+              <div class="card__icon" >🎛️</div>
+              <div>
+                <h3 class="card__title" class="card__title card__title--large">You only see what matters to you</h3>
+                <p class="body-text mt-2">
+                  <strong>What it means:</strong> The writer's interface shows writing tools. The researcher's interface shows research tools. The developer's interface shows code tools. Each person gets exactly what they need — nothing more, nothing less.
+                </p>
+                <p class="body-text mt-3">
+                  <strong>Why you care:</strong> No overwhelming dashboards. No hunting through menus. No "I didn't know that feature existed." When you open Sukha to write, you see writing. When you open it to research, you see research. Like walking into a kitchen and seeing kitchen things.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card--border-left reveal-child">
+            <div class="icon-block">
+              <div class="card__icon" >🧭</div>
+              <div>
+                <h3 class="card__title" class="card__title card__title--large">Big decisions don't depend on tiny details</h3>
+                <p class="body-text mt-2">
+                  <strong>What it means:</strong> The way Sukha behaves depends on clear contracts and agreements between parts — not on the specific code inside each part. We can upgrade any piece without rewriting everything else.
+                </p>
+                <p class="body-text mt-3">
+                  <strong>Why you care:</strong> When a better AI model comes out next month, we swap it in. Your memories, preferences, and workflows stay exactly the same. Stable today. Stable tomorrow. Like replacing the engine in your car without redesigning the steering wheel.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--warm" aria-labelledby="research-heading">
+      <div class="container reveal">
+        <h2 id="research-heading" class="section-heading mb-6">
+          Research before code
+        </h2>
+        <div class="grid grid--2 reveal-stagger">
+          <div class="card reveal-child">
+            <div class="card__icon">🔬</div>
+            <h3 class="card__title">39 researchers profiled</h3>
+            <p class="card__body">We studied the people who actually invented the techniques we use. Their papers. Their lineages. Their mistakes.</p>
+          </div>
+          <div class="card reveal-child">
+            <div class="card__icon">🧾</div>
+            <h3 class="card__title">Everything cited</h3>
+            <p class="card__body">Every design decision traces to a published paper. Confidence labeled: certain, high, medium, low, proposed.</p>
+          </div>
+          <div class="card reveal-child">
+            <div class="card__icon">🏛️</div>
+            <h3 class="card__title">Council of Ten</h3>
+            <p class="card__body">Ten expert personas debate every architectural decision asynchronously before any code is written.</p>
+          </div>
+          <div class="card reveal-child">
+            <div class="card__icon">📋</div>
+            <h3 class="card__title">Architecture decisions recorded</h3>
+            <p class="card__body">Every major choice is documented with context, alternatives considered, and the reasoning behind the winner.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section text-center" aria-label="Inspirational quote">
+      <div class="container reveal">
+        <blockquote class="quote">
+          "Any measurement you make without the knowledge of uncertainty is meaningless."
+        </blockquote>
+        <p class="quote__attribution">— Walter Lewin · The principle that guides everything we build</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__links">
+        <a href="index.html">Home</a>
+        <a href="features.html">What It Does</a>
+        <a href="https://github.com/shivaram19/open-open-computer" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+      <p class="footer__copy">Open source. Architecture phase. <span>Built with patience. Verified with data.</span></p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/core.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/navigation.js"></script>
+</body>
+</html>
