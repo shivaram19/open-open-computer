@@ -3,7 +3,7 @@
 # Covers: src/, tests/, dashboard/
 
 openai==2.32.0
-plotly==6.7.0
+plotly==6.8.0
 pydantic==2.13.3
 pytest==9.0.3
 requests==2.34.2
