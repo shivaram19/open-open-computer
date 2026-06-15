@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signal Network Recruiting Pitch Deck</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Inter+Tight:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            color: #0a0a0a;
+            background-color: #fafaf8;
+        }
+        .slide {
+            display: grid;
+            grid-template-columns: repeat(16, 1fr);
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        .cover, .statement, .why-now, .pipeline, .kpi, .publish, .forces, .manifesto, .closing {
+            padding: 5vw;
+        }
+        .cover-title {
+            grid-column: span 16;
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 9.6vw;
+            margin: 0;
+        }
+        .cover-subtitle, .cover-tagline, .cover-date {
+            grid-column: span 16;
+            font-size: 1.5vw;
+            margin: 0;
+        }
+        .cover-tagline {
+            margin-bottom: 2vw;
+        }
+        .cover-date {
+            font-size: 1.2vw;
+            margin-top: 1vw;
+        }
+        .topic {
+            position: absolute;
+            bottom: 1vw;
+            left: 1vw;
+            font-size: 11px;
+            letter-spacing: 0.08em;
+        }
+        .slide-number {
+            position: absolute;
+            bottom: 1vw;
+            right: 1vw;
+            font-size: 11px;
+            letter-spacing: 0.08em;
+        }
+        .big-statement {
+            grid-column: span 16;
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 4vw;
+            text-align: center;
+            margin: 0;
+        }
+        .footnote {
+            grid-column: span 16;
+            font-size: 1.2vw;
+            text-align: center;
+            margin-top: 2vw;
+        }
+        .why-now-column {
+            grid-column: span 5;
+            font-size: 1.5vw;
+            padding: 1vw;
+        }
+        .pipeline-cell {
+            grid-column: span 8;
+            border: 1px solid #0a0a0a;
+            padding: 2vw;
+            font-size: 1.5vw;
+            text-align: center;
+        }
+        .kpi-bar {
+            grid-column: span 4;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            border: 1px solid #0a0a0a;
+            padding: 1vw;
+        }
+        .kpi-bar div {
+            width: 100%;
+            background-color: #002FA7;
+            text-align: center;
+            color: #fafaf8;
+        }
+        .publish-card, .forces-card {
+            grid-column: span 4;
+            border: 1px solid #0a0a0a;
+            padding: 2vw;
+            font-size: 1.5vw;
+            text-align: center;
+        }
+        .manifesto-left {
+            grid-column: span 8;
+            background-color: #002FA7;
+            color: #fafaf8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 2vw;
+            padding: 2vw;
+        }
+        .manifesto-right {
+            grid-column: span 8;
+            padding: 2vw;
+            font-size: 1.5vw;
+        }
+        .closing-headline {
+            grid-column: span 16;
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 4vw;
+            text-align: center;
+            margin: 2vw 0;
+        }
+        .closing-roles {
+            grid-column: span 3;
+            font-size: 1.5vw;
+            padding: 1vw;
+            border: 1px solid #0a0a0a;
+            margin: 0.5vw;
+        }
+        .cta {
+            grid-column: span 16;
+            text-align: center;
+            font-size: 1.5vw;
+            margin-top: 2vw;
+        }
+        .repo {
+            grid-column: span 16;
+            text-align: center;
+            font-size: 1.2vw;
+            margin-top: 1vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide cover" id="slide-1" style="background:#002FA7;color:#fafaf8;">
+        <h1 class="cover-title" style="color:#fafaf8;">Signal Network</h1>
+        <h2 class="cover-subtitle" style="color:#fafaf8;opacity:.9;">Open-source hyper-local edutainment at scale</h2>
+        <p class="cover-tagline" style="color:#fafaf8;opacity:.85;">One video → N languages × M formats × P platforms</p>
+        <p class="cover-date" style="color:#fafaf8;opacity:.7;">2026</p>
+        <div class="topic" style="color:#fafaf8;opacity:.7;">OPEN SOURCE / INDIC AI</div>
+        <div class="slide-number" style="color:#fafaf8;opacity:.7;">№1/9</div>
+    </div>
+    <div class="slide statement" id="slide-2">
+        <p class="big-statement">"Most Indians cannot access civic and economic information in their own language."</p>
+        <p class="footnote">22 scheduled languages, thousands of dialects, manual localization doesn't scale.</p>
+        <div class="topic">OPEN SOURCE / INDIC AI</div>
+        <div class="slide-number">№2/9</div>
+    </div>
+    <div class="slide why-now" id="slide-3">
+        <div class="why-now-column"><strong>SCALE</strong> — India creates content mainly in Hindi/English; regional audiences are underserved.</div>
+        <div class="why-now-column"><strong>COST</strong> — Manual dubbing, translation, and short-form editing are too slow and expensive.</div>
+        <div class="why-now-column"><strong>TECH</strong> — Open Indic ASR and translation models are now fast and accurate enough to automate this.</div>
+        <div class="topic">OPEN SOURCE / INDIC AI</div>
+        <div class="slide-number">№3/9</div>
+    </div>
+    <div class="slide pipeline" id="slide-4">
+        <div class="pipeline-cell">INGEST — ffmpeg + yt-dlp → clean audio</div>
+        <div class="pipeline-cell">ASR — IndicConformer → word-level transcripts</div>
+        <div class="pipeline-cell">TRANSLATE — IndicTrans2 → 22 Indic languages</div>
+        <div class="pipeline-cell">CLIP — signal-aware viral moment extraction</div>
+        <div class="pipeline-cell">RENDER — Revideo / FFmpeg captions</div>
+        <div class="pipeline-cell">PUBLISH — Azure Blob + social platforms</div>
+        <div class="topic">OPEN SOURCE / INDIC AI</div>
+        <div class="slide-number">№4/9</div>
+    </div>
+    <div class="slide kpi" id="slide-5">
+        <div class="kpi-bar"><div style="height: 80%;">22 — languages supported</div></div>
+        <div class="kpi-bar"><div style="height: 70%;">35/35 — pipeline tests passing</div></div>
+        <div class="kpi-bar"><div style="height: 90%;">1 → 100s — videos generated per input</div></div>
+        <div class="kpi-bar"><div style="height: 50%;">0 — vendor lock-in (open source)</div></div>
+        <div class="topic">OPEN SOURCE / INDIC AI</div>
+        <div class="slide-number">№5/9</div>
+    </div>
+    <div class="slide publish" id="slide-6">
+        <div class="publish-card">YouTube Shorts</div>
+        <div class="publish-card">Instagram Reels</div>
+        <div class="publish-card">TikTok</div>
+        <div class="publish-card">WhatsApp Status</div>
+        <div class="publish-card">Telegram</div>
+        <div class="publish-card">X</div>
+        <div class="publish-card">LinkedIn</div>
+        <div class="publish-card">Facebook</div>
+        <div class="topic">OPEN SOURCE / INDIC AI</div>
+        <div class="slide-number">№6/9</div>
+    </div>
+    <div class="slide forces" id="slide-7">
+        <div class="forces-card">GPU — CUDA 12.5 + cuDNN 9 A6000 VM deployed.</div>
+        <div class="forces-card">MODELS — IndicConformer ASR + IndicTrans2 translation on GPU.</div>
+        <div class="forces-card">CLOUD — Azure Blob Storage publisher implemented.</div>
+        <div class="topic">OPEN SOURCE / INDIC AI</div>
+        <div class="slide-number">№7/9</div>
+    </div>
+    <div class="slide manifesto" id="slide-8">
+        <div class="manifesto-left">Open infrastructure<br>for a multilingual<br>internet.</div>
+        <div class="manifesto-right">
+            <p>1. Transparent models and code.</p>
+            <p>2. Forkable for any region or language.</p>
+            <p>3. No vendor lock-in, no black box.</p>
+        </div>
+        <div class="topic">OPEN SOURCE / INDIC AI</div>
+        <div class="slide-number">№8/9</div>
+    </div>
+    <div class="slide closing" id="slide-9">
+        <h2 class="closing-headline">Build the multilingual future with us.</h2>
+        <div class="closing-roles">ML Engineers</div>
+        <div class="closing-roles">Video + Frontend</div>
+        <div class="closing-roles">Data + Linguists</div>
+        <div class="closing-roles">DevOps + Cloud</div>
+        <div class="closing-roles">Community</div>
+        <p class="cta">Star the repo · Open an issue · Share this deck.</p>
+        <p class="repo">Repo: github.com/shivaram19/open-open-computer</p>
+        <div class="topic">OPEN SOURCE / INDIC AI</div>
+        <div class="slide-number">№9/9</div>
+    </div>
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+        
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = i === index ? 'grid' : 'none';
+            });
+            location.hash = `#slide-${index + 1}`;
+        }
+        
+        function navigateSlides(event) {
+            if (event.key === 'ArrowRight' || event.key === 'ArrowDown' || event.key === 'PageDown') {
+                event.preventDefault();
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            } else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp' || event.key === 'PageUp') {
+                event.preventDefault();
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(currentSlide);
+            }
+        }
+        
+        document.addEventListener('keydown', navigateSlides);
+        window.addEventListener('load', () => {
+            showSlide(currentSlide);
+        });
+    </script>
+</body>
+</html>

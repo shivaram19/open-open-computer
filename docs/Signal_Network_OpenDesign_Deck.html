@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signal Network Recruiting Deck</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Roboto', sans-serif;
+            color: #F8FAFC;
+            background-color: #0F172A;
+        }
+        .slides {
+            display: flex;
+            flex-direction: column;
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+            height: 100vh;
+        }
+        .slide {
+            scroll-snap-align: start;
+            min-height: 100vh;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            transition: opacity 0.8s, transform 0.8s;
+        }
+        .slide.hidden {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .slide h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .slide h2 {
+            font-size: 1.5rem;
+            color: #94A3B8;
+            margin-bottom: 2rem;
+        }
+        .slide ul {
+            list-style: none;
+            padding: 0;
+        }
+        .slide ul li {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+        .footer {
+            position: absolute;
+            bottom: 1rem;
+            width: 100%;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #94A3B8;
+        }
+        .nav-dots {
+            position: absolute;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+        }
+        .nav-dots button {
+            background: #06B6D4;
+            border: none;
+            width: 10px;
+            height: 10px;
+            margin: 5px 0;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .cta-buttons button {
+            background: #06B6D4;
+            border: none;
+            padding: 0.5rem 1rem;
+            color: #0F172A;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="slides">
+        <div class="slide" id="slide1">
+            <h1>One video. Every language. Automatically.</h1>
+            <h2>Signal Network turns a single source video into hyper-local short-form content for India's regional audiences.</h2>
+            <div class="footer">Open-source · Indic-languages · GPU-powered · <a href="https://github.com/shivaram19/open-open-computer" target="_blank">Repo</a></div>
+        </div>
+        <div class="slide hidden" id="slide2">
+            <h1>Most Indians can't access information in their own language.</h1>
+            <ul>
+                <li>22 official languages, thousands of dialects</li>
+                <li>Civic and economic news stays in English/Hindi</li>
+                <li>Manual dubbing and editing don't scale</li>
+            </ul>
+            <div class="footer"><a href="https://github.com/shivaram19/open-open-computer" target="_blank">Repo</a></div>
+        </div>
+        <div class="slide hidden" id="slide3">
+            <h1>Signal Network fans out one video into N languages × M formats × P platforms.</h1>
+            <ul>
+                <li>Upload one video</li>
+                <li>Get transcripts, translations, clips, captions, and publish manifests</li>
+                <li>Choose regions or let the engine rank them</li>
+            </ul>
+            <div class="footer"><a href="https://github.com/shivaram19/open-open-computer" target="_blank">Repo</a></div>
+        </div>
+        <div class="slide hidden" id="slide4">
+            <h1>Ingest → Understand → Localize → Publish</h1>
+            <ul>
+                <li>Extract clean audio</li>
+                <li>Transcribe with IndicConformer</li>
+                <li>Translate with IndicTrans2 + extract clips</li>
+                <li>Burn captions and publish to Azure + social platforms</li>
+            </ul>
+            <div class="footer"><a href="https://github.com/shivaram19/open-open-computer" target="_blank">Repo</a></div>
+        </div>
+        <div class="slide hidden" id="slide5">
+            <h1>Built, tested, and running on GPU.</h1>
+            <ul>
+                <li>CUDA 12.5 + cuDNN 9 GPU VM deployed</li>
+                <li>IndicConformer ASR + IndicTrans2 translation on GPU</li>
+                <li>35/35 pipeline tests passing</li>
+                <li>Azure Blob Storage upload ready</li>
+            </ul>
+            <div class="footer"><a href="https://github.com/shivaram19/open-open-computer" target="_blank">Repo</a></div>
+        </div>
+        <div class="slide hidden" id="slide6">
+            <h1>Publish everywhere people already watch.</h1>
+            <ul>
+                <li>YouTube Shorts, Instagram Reels, TikTok</li>
+                <li>WhatsApp Status, Telegram, X</li>
+                <li>LinkedIn, Facebook</li>
+            </ul>
+            <div class="footer"><a href="https://github.com/shivaram19/open-open-computer" target="_blank">Repo</a></div>
+        </div>
+        <div class="slide hidden" id="slide7">
+            <h1>Open infrastructure for a multilingual internet.</h1>
+            <ul>
+                <li>Transparent models and code</li>
+                <li>Forkable for any region or language</li>
+                <li>No vendor lock-in, no black box</li>
+            </ul>
+            <div class="footer"><a href="https://github.com/shivaram19/open-open-computer" target="_blank">Repo</a></div>
+        </div>
+        <div class="slide hidden" id="slide8">
+            <h1>Build the multilingual future with us.</h1>
+            <ul>
+                <li>ML Engineers, Video/Frontend devs</li>
+                <li>Data & Linguists, DevOps/Cloud</li>
+                <li>Community</li>
+            </ul>
+            <div class="cta-buttons">
+                <button onclick="window.open('https://github.com/shivaram19/open-open-computer', '_blank')">Star the repo</button>
+                <button onclick="window.open('https://github.com/shivaram19/open-open-computer/issues', '_blank')">Open an issue</button>
+                <button onclick="window.open('https://github.com/shivaram19/open-open-computer', '_blank')">Share this deck</button>
+            </div>
+            <div class="footer"><a href="https://github.com/shivaram19/open-open-computer" target="_blank">Repo</a></div>
+        </div>
+    </div>
+    <div class="nav-dots">
+        <button onclick="navigateToSlide(0)"></button>
+        <button onclick="navigateToSlide(1)"></button>
+        <button onclick="navigateToSlide(2)"></button>
+        <button onclick="navigateToSlide(3)"></button>
+        <button onclick="navigateToSlide(4)"></button>
+        <button onclick="navigateToSlide(5)"></button>
+        <button onclick="navigateToSlide(6)"></button>
+        <button onclick="navigateToSlide(7)"></button>
+    </div>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowDown' || e.key === 'PageDown') {
+                navigateToSlide(currentSlide + 1);
+            } else if (e.key === 'ArrowUp') {
+                navigateToSlide(currentSlide - 1);
+            }
+        });
+
+        function navigateToSlide(index) {
+            if (index < 0 || index >= totalSlides) return;
+            slides[currentSlide].classList.add('hidden');
+            currentSlide = index;
+            slides[currentSlide].classList.remove('hidden');
+        }
+
+        window.onload = () => {
+            slides.forEach((slide, index) => {
+                if (index !== currentSlide) slide.classList.add('hidden');
+            });
+        };
+    </script>
+</body>
+</html>
