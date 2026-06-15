@@ -25,3 +25,15 @@ __pycache__/
 Thumbs.db
 node_modules/
 package-lock.json
+
+# Deployment secrets
+.secrets/
+
+# Nested experiment repositories (cloned separately)
+experiments/Bernini/
+experiments/ComfyUI/
+experiments/gopher-mcp/
+experiments/hyperframes/
+
+# Signal Network runtime outputs
+signal-network/outputs/
