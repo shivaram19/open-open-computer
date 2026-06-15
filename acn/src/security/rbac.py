@@ -69,6 +69,9 @@ class Permission(Enum):
     CONFIG_READ = "config:read"
     CONFIG_WRITE = "config:write"
 
+    # Media generation permissions
+    MEDIA_GENERATE = "media:generate"
+
 
 @cite(
     key="RBAC-ROLE",
@@ -152,6 +155,7 @@ class PredefinedRoles:
             Permission.AUDIT_READ,
             Permission.INFRA_READ,
             Permission.CONFIG_READ,
+            Permission.MEDIA_GENERATE,
         },
         is_system_role=True,
     )
@@ -207,6 +211,7 @@ class PredefinedRoles:
             Permission.MEMORY_WRITE,
             Permission.GRAPH_READ,
             Permission.GRAPH_QUERY,
+            Permission.MEDIA_GENERATE,
         },
         is_system_role=True,
     )

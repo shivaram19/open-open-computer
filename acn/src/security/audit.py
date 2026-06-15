@@ -61,6 +61,7 @@ class AuditCategory(Enum):
     GRAPH = "graph"
     INFRA = "infra"
     CONFIG = "config"
+    MEDIA = "media"
     SYSTEM = "system"
 
 
