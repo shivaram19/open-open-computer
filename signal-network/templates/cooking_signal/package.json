@@ -1,0 +1,19 @@
+{
+  "name": "signal-network-cooking-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render": "revideo render --projectFile src/scenes/scene.tsx",
+    "preview": "revideo preview --projectFile src/scenes/scene.tsx"
+  },
+  "dependencies": {
+    "@revideo/core": "^0.4.0",
+    "@revideo/2d": "^0.4.0",
+    "@revideo/renderer": "^0.4.0",
+    "@revideo/cli": "^0.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}

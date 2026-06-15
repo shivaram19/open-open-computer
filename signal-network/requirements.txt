@@ -1,0 +1,33 @@
+# Core
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+
+# ASR + Translation
+torch>=2.0.0
+torchaudio>=2.0.0
+torchcodec>=0.14.0
+transformers>=4.35.0
+sentencepiece>=0.1.99
+huggingface_hub>=0.20.0
+onnxruntime==1.20.1
+onnx==1.20.1
+onnxruntime-gpu==1.20.1
+
+# Media
+ffmpeg-python>=0.2.0
+
+# Publishing
+azure-storage-blob>=12.0.0
+
+# API / Orchestration
+fastapi>=0.110.0
+uvicorn>=0.27.0
+redis>=5.0.0
+
+# Ingestion
+yt-dlp>=2024.0.0
+
+# Testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+fakeredis>=2.36.0

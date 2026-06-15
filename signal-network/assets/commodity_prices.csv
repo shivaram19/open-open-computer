@@ -1,0 +1,7 @@
+commodity,price,unit,change_percent,region
+salt,45,kg,12,telangana
+salt,43,kg,10,maharashtra
+onion,32,kg,-5,maharashtra
+onion,35,kg,-2,telangana
+rice,58,kg,3,assam
+rice,55,kg,2,odisha
